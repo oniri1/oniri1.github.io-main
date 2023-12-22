@@ -31,5 +31,14 @@ document.addEventListener('scroll', ()=>{
         arrow_up.classList.add('arrow_stop');
     }
 
-
 });
+
+// Navbar 토글버튼 클릭 처리
+
+const NavbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.Mobile_menu_toggle');
+
+navbarToggle.addEventListener('click', ()=> {
+    NavbarMenu.classList.toggle('open');
+})
+

@@ -47,7 +47,7 @@ button{
 }
 
 button:focus{
-    outline: 1px solid var(--color-accent);
+    outline: 1px solid transparent;
 }
 
 /* Common */
@@ -68,6 +68,15 @@ button:focus{
 .description{
     font-size: 1.5rem;
     margin: 0.5rem 0;
+}
+
+/* mobile */
+.Mobile_menu_toggle{
+    display: none;
+    position: absolute;
+    right: 2%;
+    padding: 0.5rem 1rem;
+    color: #6500a0;
 }
 
 /* Header */
@@ -449,6 +458,15 @@ button:focus{
 }
 
 @media screen and (max-width: 768px) {
+    /* mobile */
+    .Mobile_menu_toggle{
+        display: block;
+    }
+    .header__menu.open{
+        display: flex;
+    }
+
+    
     .section{
         padding: 3rem 2rem;
     }
@@ -464,9 +482,11 @@ button:focus{
     .header{
         flex-direction: column;
         align-items: start;
+        background-color: var(--color-primary);
     }
 
     .header__menu{
+        display: none;
         flex-direction: column;
         text-align: center;
         padding: 1rem 4rem;
