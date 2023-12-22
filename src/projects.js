@@ -1,5 +1,13 @@
 'use strict';
 
-const header = '안녕';
+// 프로젝트 필터링 관련 로직 처리
 
-console.log(header);
+const categories = document.querySelector('.categories');
+
+categories.addEventListener('click', (event) => {
+    const filter = event.target.dataset.category;
+
+    console.log(filter);
+
+
+})
