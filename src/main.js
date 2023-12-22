@@ -41,4 +41,7 @@ const navbarToggle = document.querySelector('.Mobile_menu_toggle');
 navbarToggle.addEventListener('click', ()=> {
     NavbarMenu.classList.toggle('open');
 })
+NavbarMenu.addEventListener('click', ()=>{
+    NavbarMenu.classList.toggle('open');
+})
 
