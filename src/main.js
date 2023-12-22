@@ -14,12 +14,22 @@ document.addEventListener('scroll', () => {
 
 });
 
-const home = document.querySelector('.home')
+const home = document.querySelector('.home');
 const homeHeight = home.offsetHeight;
+const arrow_up = document.querySelector('.arrow-up');
 
 document.addEventListener('scroll', ()=>{
     console.log(1-(window.scrollY / homeHeight));
     home.style.opacity = 1-(window.scrollY / homeHeight);
+
+    if(window.scrollY > homeHeight / 2){
+        arrow_up.style.opacity = 1;
+        arrow_up.classList.remove('arrow_stop');
+    }
+    else{
+        arrow_up.style.opacity = 0;
+        arrow_up.classList.add('arrow_stop');
+    }
 
 
 });
