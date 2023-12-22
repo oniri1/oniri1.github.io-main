@@ -16,6 +16,7 @@ document.addEventListener('scroll', () => {
 
 });
 
+// arrow 버튼
 const home = document.querySelector('.home');
 const homeHeight = home.offsetHeight;
 const arrow_up = document.querySelector('.arrow-up');
