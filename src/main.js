@@ -1,3 +1,5 @@
+'use strict';
+
 // header에 페이지 아래로 스크롤시 header--dark(백그라운드 컬러 삭제) 적용
 const header = document.querySelector('.header');
 const headerHeight = header.offsetHeight;
