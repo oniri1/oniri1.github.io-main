@@ -20,6 +20,7 @@ categories.addEventListener('click', (event) => {
 });
 
 function handleActiveSelection(target){
+        // 클릭시 액티브 상태 바꾸기 
         const active = document.querySelector('.category--selected');
         active.classList.remove('category--selected');
         target.classList.add('category--selected');
@@ -42,3 +43,12 @@ function filterProjects(filter){
         setTimeout(()=>{
             projectscontainer.classList.remove('anim-out');},250);
 }
+
+
+let options = {
+    root: document.querySelector("#about"),
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
+  
+let observer = new IntersectionObserver(callback, options);
