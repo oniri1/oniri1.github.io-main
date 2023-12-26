@@ -45,6 +45,10 @@ function filterProjects(filter){
 }
 
 
+// 옵저버
+
+
+
 let options = {
     root: document.querySelector("#about"),
     rootMargin: "0px",
@@ -52,3 +56,6 @@ let options = {
   };
   
 let observer = new IntersectionObserver(callback, options);
+
+let target = document.querySelector("#about");
+observer.observe(target);
