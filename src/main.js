@@ -22,7 +22,7 @@ const homeHeight = home.offsetHeight;
 const arrow_up = document.querySelector('.arrow-up');
 
 document.addEventListener('scroll', ()=>{
-    console.log(1-(window.scrollY / homeHeight));
+    // console.log(1-(window.scrollY / homeHeight));
     home.style.opacity = 1-(window.scrollY / homeHeight);
 
     if(window.scrollY > homeHeight / 2){

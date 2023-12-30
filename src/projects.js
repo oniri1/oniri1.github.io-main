@@ -31,7 +31,7 @@ function filterProjects(filter){
         projectscontainer.classList.add('anim-out');
 
         projects.forEach(project => {
-            console.log(project.dataset.type);
+            // console.log(project.dataset.type);
             if(filter === 'all' || filter === project.dataset.type){
                 project.style.display = 'block';
             } 
@@ -45,17 +45,3 @@ function filterProjects(filter){
 }
 
 
-// 옵저버
-
-
-
-let options = {
-    root: document.querySelector("#about"),
-    rootMargin: "0px",
-    threshold: 1.0,
-  };
-  
-let observer = new IntersectionObserver(callback, options);
-
-let target = document.querySelector("#about");
-observer.observe(target);
