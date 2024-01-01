@@ -13,9 +13,7 @@ const sectionIDs = ['#home','#about','#skills','#Worked','#Testimonials','#Conta
 const sections = sectionIDs.map((id) => document.querySelector(id));
 const navItems = sectionIDs.map(id => document.querySelector(`[href="${id}"]`));
 
-console.log(sectionIDs);
-console.log(sections);
-console.log(navItems);
+
 
 const options = {};
 const observer = new IntersectionObserver(observercallback, options);
@@ -31,3 +29,7 @@ function observercallback(entries) {
 
 
 };
+
+console.log(sectionIDs);
+console.log(sections);
+console.log(navItems);
