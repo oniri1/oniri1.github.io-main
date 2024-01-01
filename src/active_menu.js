@@ -13,23 +13,37 @@ const sectionIDs = ['#home','#about','#skills','#Worked','#Testimonials','#Conta
 const sections = sectionIDs.map((id) => document.querySelector(id));
 const navItems = sectionIDs.map(id => document.querySelector(`[href="${id}"]`));
 
+const visibleSections = sectionIDs.map(() => false);
 
+
+console.log(navItems);
 
 const options = {};
 const observer = new IntersectionObserver(observercallback, options);
 sections.forEach(section => observer.observe(section));
 
 function observercallback(entries) {
+    let selectLastone;
     entries.forEach(entry => {
-        console.log(entry.target);
-        console.log(entry.isIntersecting);
-        console.log(entry.intersectionRatio);
+        const index = sectionIDs.indexOf(`#${entry.target.id}`);
+        visibleSections[index] = entry.isIntersecting;
+        selectLastone =
+        index === sectionIDs.length - 1 && 
+        entry.isIntersecting && 
+        entry.intersectionRatio >= 0.99;
 
     });
+    console.log('무조건 라스트 섹션!', selectLastone);
+    console.log(visibleSections);
 
+    const navIndex = selectLastone 
+    ? sectionIDs.length - 1 
+    : findFirstIntersecting(visibleSections);
+    console.log(sectionIDs[navIndex]);
+}
 
-};
+function findFirstIntersecting(intersections){
+    const index = intersections.indexOf(true);
+    return index >= 0 ? index : 0;
 
-console.log(sectionIDs);
-console.log(sections);
-console.log(navItems);
+}
