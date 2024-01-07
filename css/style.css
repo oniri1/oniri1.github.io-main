@@ -150,6 +150,27 @@ button:focus {
     background-color: var(--color-primary);
 }
 
+.home__wave {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.home__wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+}
+
+.home__wave .shape-fill {
+    fill: #FFFFFF;
+}
+
 .home {
     color: var(--color-text);
     padding: 5rem 1rem;
@@ -253,8 +274,30 @@ button:focus {
 
 /* Skills */
 #skills {
+    position: relative;
     background-color: var(--color-primary-variant);
     color: var(--color-text);
+}
+
+.skills__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.skills__wave svg {
+    position: relative;
+    display: block;
+    width: calc(182% + 1.3px);
+    height: 25px;
+}
+
+.skills__wave .shape-fill {
+    fill: var(--color-primary);
 }
 
 .skills {
@@ -481,8 +524,29 @@ button:focus {
 /* footer */
 
 #Contact {
+    position: relative;
     background-color: var(--color-primary);
     color: var(--color-text);
+}
+
+.footer__arrow_top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.footer__arrow_top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 180px;
+}
+
+.footer__arrow_top .shape-fill {
+    fill: white;
 }
 
 .contact__links {
@@ -502,6 +566,13 @@ button:focus {
 }
 
 @media screen and (max-width: 768px) {
+
+    /* wave */
+
+    .home__wave {
+        bottom: -50px;
+
+    }
 
     /* mobile */
     .Mobile_menu_toggle {
