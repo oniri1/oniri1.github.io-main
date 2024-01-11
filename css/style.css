@@ -206,13 +206,6 @@ button:focus {
     padding-top: 3rem;
 }
 
-.home__containerse{
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-top: 3rem;
-}
-
 .home__avatar {
     background: var(--home-avatar-svg); 
     position: relative;
