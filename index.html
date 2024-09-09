@@ -6,15 +6,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--SEO-->
-    <title>HamSter&#39;s lovely House</title>
-    <meta name="description" content="많은 햄스터의 집">
-    <meta name="author" content="MANYI">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>oniri1 ProtFolio&#39;s</title>
+    <meta name="description" content="onir1 포트폴리오 사이트">
+    <meta name="author" content="Oniri1">
+    <link rel="shortcut icon" href="./images/hamsterlooking-removebg.png" type="image/x-icon">
     <!-- OG (Open Graph data) -->
     <meta property="og:title" content="햄스터 하우스" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://oniri1.github.io/PORTFOILO/" />
-    <meta property="og:image" content="https://oniri1.github.io/PORTFOILO/images/og.webp" />
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,13 +24,16 @@
 
     <!-- Typeit -->
     <script src="https://unpkg.com/typeit@8.8.0/dist/index.umd.js"></script>
+
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+
     <!-- JS -->
-    <script type="module" src="src/main.js" defer></script>
-    <script type="module" src="src/projects.js" defer></script>
-    <script type="module" src="src/active_menu.js" defer> </script>
-    <script type="module" src="src/type.js" defer> </script>
+    <script type="module" src="./src/main.js" defer></script>
+    <script type="module" src="./src/projects.js" defer></script>
+    <script type="module" src="./src/active_menu.js" defer> </script>
+    <script type="module" src="./src/type.js" defer> </script>
+    <script type="module" src="./src/skillsHandler.js" defer></script>
 
 
 </head>
@@ -43,16 +45,16 @@
     <!-- Header -->
     <header class="header">
         <div class="header__logo">
-            <img class="header__logo__img" src="images/hamsterlooking-removebg.png" alt="logo">
-            <h1 class="header__logo__title"><a href="#">hamster are cute</a></h1>
+            <img class="header__logo__img" src="./images/hamsterlooking-removebg.png" alt="logo">
+            <h1 class="header__logo__title"><a href="#">Oniri1 ProtFolio</a></h1>
         </div>
 
         <nav class="header__nav">
             <ul class="header__menu">
                 <li><a class="header__menu__item active" href="#home">Home</a></li>
                 <li><a class="header__menu__item" href="#about">About</a></li>
+                <li><a class="header__menu__item" href="#Worked">Projects</a></li>
                 <li><a class="header__menu__item" href="#skills">Skills</a></li>
-                <li><a class="header__menu__item" href="#Worked">My Work</a></li>
                 <li><a class="header__menu__item" href="#Testimonials">Testimonials</a></li>
                 <li><a class="header__menu__item" href="#Contact">Contact</a></li>
             </ul>
@@ -69,14 +71,16 @@
         <!-- Home -->
         <section id="home">
             <div class="max-container home__container">
-                <img class="home__avatar" src="images/hamsterlooking-removebg.png" alt="main hamster" />
+                <img class="home__avatar" src="./images/me.png" alt="main hamster" />
 
                 <div class="home">
-
                     <!-- aria-label은 막 구글 번역기 소리내서 읽는 것 처럼 스크린 리더가 읽는걸 정해주는거임. 클래스가 type.js로 자꾸 바뀌면 리로딩 하기 때문에 필요함 -->
-                    <h2 class="home__title" aria-label="mega Cute hamsters">Mega Cute <br /><strong
-                            class="home__title--strong">hamster&#39;s</strong></h2>
-                    <p class="home__description">its Manyi favority hamster picture&#39;s</p>
+                    <h2 class="home__title" aria-label="안녕하세요, 주니어 풀스택 개발자 이정배입니다.">반갑습니다!<br /> 주니어 풀스택 개발자 <br /> 이정배입니다.<br /><strong
+                            class="home__title--strong">My Skills</strong></h2>
+                    <p class="home__description">TypeScript, Node.js, Nest.JS를 활용해 안정적인 백엔드 서버를 구축하고, MySQL, MongoDB로 데이터베이스를 관리합니다. <br/>
+                        React와 Next.js로 프론트엔드를 구현하며, Socket.IO와 Axios로 실시간 소켓 통신과 API 호출을 처리합니다. <br/>
+                        OAuth로 인증 시스템을 구축하고, GitHub로 협업 해 AWS로 배포해 왔습니다.<br />
+                        OpenAI와 같은 최신 기술 스택의 배움을 즐기며 빠르게 성장하는 주니어 개발자 입니다.</p>
                     <a class="home__contact" href="#Contact">Contact me</a>
                 </div>
             </div>
@@ -85,257 +89,165 @@
 
         <!-- About -->
         <section id="about" class="section max-container">
-            <h2 class="title">About me</h2>
-            <p class="description">why hamster are cute</p>
+            <h2 class="title">About</h2>
+            <p class="description">Summation</p>
 
             <ul class="majors">
                 <li class="major">
                     <i class="fa-brands fa-html5 major__icon"></i>
-                    <p class="major__title">cute hamster</p>
-                    <p>Fur, round, soft, fluffy, small, lovely</p>
+                    <p class="major__title">FrontEnd</p>
+                    <p>Next.js, React, TailwindCss</p>
                 </li>
 
                 <li class="major">
-                    <i class="fa-solid fa-mobile major__icon"></i>
-                    <p class="major__title">hide hamster</p>
-                    <p>trivial, cute</p>
+                    <i class="fa fa-server major__icon"></i>
+                    <p class="major__title">BackEnd</p>
+                    <p>Nest.js, Express.js, Node.js</p>
                 </li>
 
                 <li class="major">
-                    <i class="fa-solid fa-server major__icon"></i>
-                    <p class="major__title">mad hamster</p>
-                    <p>amazing</p>
-                </li>
-            </ul>
-
-            <ul class="jobs">
-                <li class="job">
-                    <img src="images/why_cute.jpg" alt="cute_hamster">
-                    <div>
-                        <p class="job__name">Just watching it</p>
-                        <p class="job_period">calms my mind</p>
-                    </div>
+                    <i class="fa fa-database major__icon"></i>
+                    <p class="major__title">DataBases</p>
+                    <p>MySQL, MongoDB</p>
                 </li>
 
-                <li class="job">
-                    <img src="images/hide_hamster.jpg" alt="hide_hamster">
-                    <div>
-                        <p class="job__name">Look for hamsters in unexpected places</p>
-                        <p class="job_period">Isn't it surprisingly cute?</p>
-                    </div>
+                <li class="major">
+                    <i class="fa fa-book major__icon"></i>
+                    <p class="major__title">Library</p>
+                    <p>Axios, Socket.io, Sequelize, Mongoose</p>
                 </li>
-
-                <li class="job">
-                    <img src="images/mad_hamster.jpg" alt="mad_hamster">
-                    <div>
-                        <p class="job__name">
-                            Even that little creature
-                        </p>
-                        <p class="job_period">is so scary</p>
-                    </div>
-
+               
+                <li class="major">
+                    <i class="fa fa-stack-overflow major__icon"></i>
+                    <p class="major__title">Open API</p>
+                    <p>OpenAI, naverMap, OAuth</p>
                 </li>
 
             </ul>
-        </section>
 
-
-
-        <!-- Skills -->
-        <section id="skills" class="section">
-            <div class="max-container">
-                <h2 class="title">hamster skills</h2>
-                <p class="description">station & attributes</p>
-                <p>This is a collection of the hamsters abilities and the mysterious skills the hamster has</p>
-
-                <div class="skills">
-                    <!-- 1 -->
-                    <section class="skills__coding">
-                        <h3 class="skills__title">Hamster station</h3>
-                        <ul>
-
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>power</span><span>90%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width: 90%"></div>
-                                </div>
-                            </li>
-
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>defense</span>
-                                    <span>10%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width: 10%"></div>
-                                </div>
-                            </li>
-
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>speed</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width: 70%"></div>
-                                </div>
-                            </li>
-
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>reaction</span>
-                                    <span>10%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width: 10%"></div>
-                                </div>
-                            </li>
-
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>earing</span>
-                                    <span>95%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width: 95%"></div>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </section>
-
-                    <!-- 2 -->
-                    <section class="skills__tools">
-                        <h3 class="skills__title">Tools</h3>
-                        <ul>
-                            <li>power</li>
-                            <li>defense</li>
-                            <li>speed</li>
-                            <li>reaction</li>
-                            <li>earing</li>
-                        </ul>
-                    </section>
-
-                    <!-- 3 -->
-                    <section class="skills__etc">
-                        <h3 class="skills__title">skills</h3>
-                        <ul>
-                            <li>jump kick</li>
-                            <li>bite</li>
-                            <li>run a way</li>
-                        </ul>
-                    </section>
-
-                </div>
-            </div>
 
         </section>
 
         <!-- Worked -->
         <section id="Worked" class="section">
             <div class="max-container">
-                <h2 class="title">HAMSTER GANG</h2>
+                <h2 class="title">Projects</h2>
                 <p class="description">
-                    This is something I made to practice my HTML. It doesn't mean much</p>
+                    저의 프로젝트들을 간단하게 소개합니다.</p>
 
                 <ul class="categories">
                     <li><button class="category category--selected" data-category="all">ALL <span
-                                class="category__count">8</span></button></li>
-                    <li><button class="category" data-category="front-end"="">front-end <span
-                                class="category__count">4</span></button></li>
-                    <li><button class="category" data-category="back-end">back-end <span
-                                class="category__count">2</span></button></li>
-                    <li><button class="category" data-category="mobile">mobile <span
+                                class="category__count">3</span></button></li>
+                    <li><button class="category" data-category="front-end">Personal_Project <span
+                                class="category__count">1</span></button></li>
+                    <li><button class="category" data-category="back-end">Team-Project <span
                                 class="category__count">2</span></button></li>
                 </ul>
 
-                <ul class="projects">
-                    <li class="project" data-type="front-end">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project1.webp" alt="project1" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">project #1</h3>
-                                <p>something arara</p>
-                            </div>
-                        </a>
-                    </li>
+                <ul class="projects" id="projectClick">
 
-                    <li class="project" data-type="front-end">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project2.webp" alt="project2" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">project #2</h3>
-                                <p>something arara</p>
+                    <li class="project" data-type="back-end">
+                        <a href="#skills">
+                            <img src="./images/projects/chatSite.jpg" alt="project1" class="project__img">
+                            <div class="project__metadata" data-projectid="1">
+                                <h3 class="project__title" data-projectid="1">Colosseum</h3>
+                                <p data-projectid="1">purpose : ChatSite<br/>MainStack: HTML,CSS,JavaScript<br/>
+                                    Node.js,Express,Socket.io,Axios
+                                    <br/>MySQL,MongoDB
+                                </p>
                             </div>
                         </a>
                     </li>
 
                     <li class="project" data-type="back-end">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project3.webp" alt="project3" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">project #3</h3>
-                                <p>something arara</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="project" data-type="mobile">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project4.webp" alt="project4" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">project #4</h3>
-                                <p>something arara</p>
+                        <a href="#skills">
+                            <img src="./images/projects/HamsterMarket.png" alt="project2" class="project__img">
+                            <div class="project__metadata" data-projectid="2">
+                                <h3 class="project__title" data-projectid="2">Hamster_Market</h3>
+                                <p id="Two" data-projectid="2">purpose : ShoppingSite<br/>MainStack: React,TailwindCss,Express<br/>
+                                    TypeScript,NaverMap,OAuth,Axios <br/>
+                                    MySQL,MongoDB
+                                </p>
                             </div>
                         </a>
                     </li>
 
                     <li class="project" data-type="front-end">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project5.webp" alt="project5" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">project #5</h3>
-                                <p>something arara</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="project" data-type="front-end">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project6.webp" alt="project6" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">project #6</h3>
-                                <p>something arara</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="project" data-type="back-end">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project7.webp" alt="project7" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">project #7</h3>
-                                <p>something arara</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="project" data-type="mobile">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project8.webp" alt="project8" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">project #8</h3>
-                                <p>something arara</p>
+                        <a href="#skills">
+                            <img src="./images/projects/openAI.png" alt="project3" class="project__img">
+                            <div class="project__metadata" data-projectid="3">
+                                <h3 class="project__title" data-projectid="3">AI_InterViewSite</h3>
+                                <p id="Three" data-projectid="3">purpose : AiService<br/>MainStack: Next.js,Nest.js,TailwindCss<br/>
+                                    TypeScript,OpenAI,Axios <br/>
+                                    MySQL,MongoDB
+                                </p>
                             </div>
                         </a>
                     </li>
                 </ul>
-
             </div>
 
         </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="max-container">
+                <!-- 바꿀 타이틀 -->
+                <h2 class="title" id="skillsTitle">AI_InterViewSite</h2>
+                <!-- 바꿀 디테일 -->
+                <p id="skillsDetail">Next.js와 Nest.js 및 OpenAI를 중심으로 활용하여 인터뷰 및 답변에 대한 피드백을 받을 수 있는 프로젝트를 만들었습니다.</p>
+                <p class="description">FrameWork & Library</p>
+
+                <div class="skills">
+                    <!-- 1 -->
+                    <section class="skills__coding">  
+                        <!-- 바꿀 이미지 -->
+                        <div
+                         style="width: 100%; height: 85%; position:relative"
+                         id="skillsImg">
+                            <img src="./images/projects/openAI.png" style="width: 100%; height: 100%;" alt="project3">
+                            <a href="https://main.oniri1.com/openAiProject/" target="_blank"> 
+                                <div class="skills__metadata">
+                                    <h3>클릭 시 이동</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        
+                        <a href="https://oniri1.tistory.com/" target="_blank"><h3 class="skills__title">자세한 개발과정 보기</h3></a>
+                        
+                    </section>
+
+                    <!-- 2 -->
+                    <section class="skills__tools">
+                        <h3 class="skills__title">Library</h3>
+                        <!-- 바꿀 랍러 -->
+                        <ul id="skillsLibrary">
+                            <li>axios</li>
+                            <li>typeorm</li>
+                            <li>mongoose</li>
+                            <li>openai</li>
+                            <li>session-file-store</li>
+                            <li>jsonwebtoken</li>
+                        </ul>
+                    </section>
+
+                    <!-- 3 -->
+                    <section class="skills__etc">
+                        <h3 class="skills__title">FrameWork</h3>
+                        <!-- 바꿀 프레임워크 -->
+                        <ul id="skillsFrameWork">
+                            <li>Next.js</li>
+                            <li>Nest.js</li>
+                            <li>TailwindCss</li>
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+
+</section>
+
 
         <!-- Testimonials -->
         <section id="Testimonials" class="section max-container">
@@ -409,7 +321,7 @@
                 </li>
 
                 <li>
-                    <a class="contact__link" href="https://github.com/oniri1" target="_blank" title="my linkedin link">
+                    <a class="contact__link" href="https://oniri1.tistory.com/" target="_blank" title="my linkedin link">
                         <i class="fa-brands fa-linkedin">
                         </i>
                     </a>
@@ -417,7 +329,7 @@
 
                 </li>
             </ul>
-            <p>@hamster king Manyi - all hamster picture</p>
+            <p>이정배의 취업용 포트폴리오 사이트 입니다.</p>
 
         </div>
     </footer>
