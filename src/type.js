@@ -27,7 +27,7 @@ new TypeIt(".home__title--strong", {
   .pause(400)
   .delete(null, { instant: true })
 
-  .type("툴 / 데브옵스 : GitHub Action, Google Docs, Figma")
+  .type("툴 / 데브옵스 : AWS, GitHub Action, Google Docs, Figma")
   .pause(400)
   .delete(null, { instant: true })
 
