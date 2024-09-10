@@ -81,7 +81,7 @@ button:focus {
 
 .max-container {
   max-width: var(--size-max-width);
-  height: 700px;
+
   margin: auto;
 }
 
@@ -169,6 +169,11 @@ button:focus {
   padding-top: 7rem;
   text-align: center;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  justify-content: center;
 }
 
 /* 웨이브 */
@@ -208,7 +213,7 @@ button:focus {
 
 .home__avatar {
   position: relative;
-  width: 300px;
+  width: 230px;
   height: 300px;
   object-fit: cover;
   transform: scaleX(-1);
@@ -245,6 +250,42 @@ button:focus {
   outline: 2px solid var(--color-accent);
 }
 
+.cmd-window {
+  width: 70%;
+  height: 200px;
+  border: 2px solid #333; /* 창 테두리 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 그림자 */
+  overflow-y: auto;
+  overflow-x: auto;
+  background-color: #000;
+  scrollbar-width: none;
+  margin-bottom: 100px;
+}
+
+.cmd-header {
+  background-color: #1a1a1a;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cmd-header-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.cmd-header-button {
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border: 1px solid #555;
+  text-align: center;
+  line-height: 16px;
+  color: white;
+  cursor: pointer;
+}
+
 /* About */
 .majors {
   display: flex;
@@ -255,6 +296,8 @@ button:focus {
 
 .major {
   background-color: var(--color-primary-variant);
+  height: 300px;
+  width: 300px;
   padding: 2rem 1rem;
   color: var(--color-text);
   border-radius: 1rem;
@@ -277,6 +320,20 @@ button:focus {
 
 .major:hover .major__icon {
   transform: rotate(-15deg) scale(1.2);
+}
+
+.mainStack_logos {
+  gap: 2px;
+  position: flex;
+}
+
+.mainStack_logo {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 100%;
+  border: 1px solid var(--color-accent);
+  background-color: white;
 }
 
 /* Skills */
@@ -459,7 +516,9 @@ button:focus {
   height: 100%;
   background-color: var(--color-black);
   opacity: 0;
-  /* 배경 선명도 */
+
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;

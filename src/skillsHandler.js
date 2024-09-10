@@ -50,17 +50,20 @@ const skillChanger = ({
 const projectAll = document.getElementById("projectClick");
 
 projectAll.onclick = (e) => {
-  const id = e.target.dataset.projectid;
+  const projectElement = e.target.closest("[data-projectid]");
+  if (projectElement) {
+    const id = projectElement.getAttribute("data-projectid");
 
-  if (id) {
-    if (id === "1") {
-      skillChanger(chatSiteValues);
-    }
-    if (id === "2") {
-      skillChanger(shopSiteValues);
-    }
-    if (id === "3") {
-      skillChanger(openAiValues);
+    if (id) {
+      if (id === "1") {
+        skillChanger(chatSiteValues);
+      }
+      if (id === "2") {
+        skillChanger(shopSiteValues);
+      }
+      if (id === "3") {
+        skillChanger(openAiValues);
+      }
     }
   }
 };
