@@ -2,37 +2,33 @@
 
 new TypeIt(".home__title--strong", {
   loop: true,
-  speed: 50,
+  speed: 60,
 })
   .pause(400)
   .delete(null, { instant: true })
 
-  .type("메인 언어 : TypeScript")
-  .pause(300)
+  .type(
+    "TypeScript, Node.js, Nest.JS를 활용해 안정적인 백엔드 서버를 구축하고, MySQL, MongoDB로 데이터베이스를 관리합니다."
+  )
+  .pause(600)
   .delete(null, { instant: true })
 
-  .type("프레임워크: Next.js, Nest.js, React, tailwindCss")
-  .pause(400)
+  .type(
+    "React와 Next.js로 프론트엔드를 구현하며, Socket.IO와 Axios로 실시간 소켓 통신과 API 호출을 처리합니다."
+  )
+  .pause(600)
   .delete(null, { instant: true })
 
-  .type("OPEN API: OpenAI,naverMap, Naver & Google OAuth")
-  .pause(400)
-  .delete(null, { instant: true })
-
-  .type("작업 환경 : Node.js, Linux, AWS")
-  .pause(400)
-  .delete(null, { instant: true })
-
-  .type("데이터 베이스 : MySQL, MongoDB")
-  .pause(400)
-  .delete(null, { instant: true })
-
-  .type("툴 / 데브옵스 : AWS, GitHub Action, Google Docs, Figma")
-  .pause(400)
-  .delete(null, { instant: true })
-
-  .type("라이브러리: Axios, Socket.io, Express.js, Sequelize, Mongoose")
+  .type(
+    "OAuth로 인증 시스템을 구축하고, GitHub로 협업 해 AWS로 배포해 왔습니다."
+  )
   .pause(500)
+  .delete(null, { instant: true })
+
+  .type(
+    "OpenAI와 같은 최신 기술 스택의 배움을 즐기며 빠르게 성장하는 주니어 개발자 입니다."
+  )
+  .pause(800)
   .delete(null, { instant: true })
 
   .go();

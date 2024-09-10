@@ -81,6 +81,7 @@ button:focus {
 
 .max-container {
   max-width: var(--size-max-width);
+  height: 700px;
   margin: auto;
 }
 
@@ -162,7 +163,6 @@ button:focus {
 #home {
   position: relative;
   background-color: var(--color-primary);
-  /* background: var(--home-bg-gradient); */
   background-image: var(--home-bg-svg);
   color: var(--color-text);
   padding: 5rem 1rem;
@@ -190,9 +190,10 @@ button:focus {
 
 .home {
   color: var(--color-text);
-  padding: 5rem 1rem;
-  padding-top: 7rem;
-  text-align: center;
+
+  width: 70%;
+  padding: 1rem 1rem;
+  padding-top: 1rem;
   opacity: 1;
 }
 
@@ -220,6 +221,7 @@ button:focus {
 }
 
 .home__title--strong {
+  font-size: 1.2rem;
   color: var(--color-accent);
 }
 
@@ -445,6 +447,8 @@ button:focus {
 
 .project__img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project__metadata {
@@ -462,6 +466,12 @@ button:focus {
   align-items: center;
   transition: all 300ms ease-in;
   transform: translateY(-10px);
+  font-size: 0.9rem;
+}
+
+.project__metadata p {
+  text-align: start;
+  padding: 0 1;
 }
 
 .project__metadata:hover {
@@ -502,6 +512,7 @@ button:focus {
   width: 150px;
   height: 150px;
   border-radius: 100%;
+
   box-shadow: -10px -10px 30px 4px rgba(0, 0, 0, 0.1),
     10px 10px 30px 4px rgba(45, 78, 255, 0.15);
 }
@@ -585,11 +596,29 @@ button:focus {
   color: var(--color-accent);
 }
 
-.font_new {
+.contact__svg {
+  height: 36px;
+  width: 31px;
+  fill: white;
+  transition: fill 250ms ease-in;
+}
+
+.contact__svg:hover {
+  fill: var(--color-accent);
+}
+
+.font_new_black {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
-  color: rgba(254, 254, 254, 0.8);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.font_new_white {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(254, 254, 254, 0.7);
 }
 
 @media screen and (max-width: 768px) {
