@@ -81,7 +81,6 @@ button:focus {
 
 .max-container {
   max-width: var(--size-max-width);
-
   margin: auto;
 }
 
@@ -568,9 +567,11 @@ button:focus {
 }
 
 .testimonial__img {
-  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
   height: 150px;
   border-radius: 100%;
+  overflow: hidden;
 
   box-shadow: -10px -10px 30px 4px rgba(0, 0, 0, 0.1),
     10px 10px 30px 4px rgba(45, 78, 255, 0.15);

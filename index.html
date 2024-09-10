@@ -74,7 +74,7 @@
                     <img class="home__avatar" src="./images/me.png" alt="main hamster" />
                     <div class="home">
                         <div>
-                            <h2 class="home__title" aria-label="안녕하세요, 주니어 풀스택 개발자 이정배입니다.">JS 풀스택을 목표하는 <br /> 주니어 개발자 <br /> 이정배입니다!<br /></h2>
+                            <h2 class="home__title" aria-label="안녕하세요, 주니어 풀스택 개발자 이정배입니다.">안녕하세요! <br/> JS 풀스택을 목표하는 <br /> 주니어 개발자 <br /> 이정배입니다!<br /></h2>
                             <a class="home__contact" href="#Contact">Contact me</a>
                         </div>
                     </div>
@@ -227,10 +227,10 @@
         <section id="skills" class="section">
             <div class="max-container">
                 <!-- 바꿀 타이틀 -->
-                <h2 class="title" id="skillsTitle">AI_InterViewSite</h2>
+                <h2 class="title" id="skillsTitle"></h2>
                 <!-- 바꿀 디테일 -->
-                <p id="skillsDetail">Next.js와 Nest.js 및 OpenAI를 중심으로 활용하여 인터뷰 및 답변에 대한 피드백을 받을 수 있는 프로젝트를 만들었습니다.</p>
-                <p class="description">FrameWork & Library</p>
+                <p id="skillsDetail"></p>
+                <p class="description"></p>
 
                 <div class="skills">
                     <!-- 1 -->
@@ -239,16 +239,10 @@
                         <div
                          style="width: 100%; height: 85%; position:relative"
                          id="skillsImg">
-                            <img src="./images/projects/openAI.png" style="width: 100%; height: 100%;" alt="project3">
-                            <a href="https://main.oniri1.com/openAiProject/" target="_blank"> 
-                                <div class="skills__metadata">
-                                    <h3>클릭 시 이동</h3>
-                                </div>
-                            </a>
                         </div>
 
-                        
-                        <a href="https://oniri1.tistory.com/" target="_blank"><h3 class="skills__title">자세한 개발과정 보기</h3></a>
+                        <!-- 바꿀 링크 -->
+                        <a href="#" id="skillsHref" target="_blank"><h3 class="skills__title">프로젝트 기획파일 확인하기</h3></a>
                         
                     </section>
 
@@ -257,12 +251,6 @@
                         <h3 class="skills__title">Library</h3>
                         <!-- 바꿀 랍러 -->
                         <ul id="skillsLibrary">
-                            <li>axios</li>
-                            <li>typeorm</li>
-                            <li>mongoose</li>
-                            <li>openai</li>
-                            <li>session-file-store</li>
-                            <li>jsonwebtoken</li>
                         </ul>
                     </section>
 
@@ -271,9 +259,6 @@
                         <h3 class="skills__title">FrameWork</h3>
                         <!-- 바꿀 프레임워크 -->
                         <ul id="skillsFrameWork">
-                            <li>Next.js</li>
-                            <li>Nest.js</li>
-                            <li>TailwindCss</li>
                         </ul>
                     </section>
 
@@ -284,148 +269,21 @@
             <!-- 스킬 디테일 -->
             <section class="skills__coding">
                 <ul>
-
-
                     <li class="bar">
                         <div class="bar__metadata">
-                            <span>CSS</span>
-                            <span>65%</span>
+                            <span>R&D</span>
+                            <span>75%</span>
                         </div>
                         <div class="bar__bg">
-                            <div class="bar__value" style="width: 65%"></div>
-                        </div>
-                        <div class="font_new_white">기본적인 스타일링부터 애니메이션과 트랜지션을 통한 인터랙션까지 구현할 수 있습니다.
-                            <br/>웹 페이지의 레이아웃과 디자인을 세부적으로 조정하고, Flex와 Grid를 사용해 반응형 디자인을 구성합니다.
-                            <br/>또한, 트랜지션과 애니메이션을 사용해 사용자에 생동감을 부여할 수 있습니다.</div>
-                    </li>
-
-                    <li class="bar">
-                        <div class="bar__metadata">
-                            <span>JavaScript</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 80%"></div>
-                        </div>
-                        <div class="font_new_white">동적인 웹 기능을 구현하는 데 능숙합니다.
-                            <br/>DOM 조작, 이벤트 처리, 비동기 작업(콜백, 프로미스, async/await) 등을 통해 사용자의 인터랙션에 실시간으로 반응하는 웹 애플리케이션을 개발할 수 있습니다.
-                            <br/>또한, API 호출을 통해 서버와 데이터를 주고받고, 데이터를 처리하는 작업에 익숙하며, ES6+ 문법을 활용하여 효율적인 코드 작성을 할 수 있습니다.
-                            <br/>간단한 애니메이션 구현과 성능 최적화에도 기본적인 이해를 갖추고 있습니다.</div>
-                    </li>
-
-                    <li class="bar">
-                        <div class="bar__metadata">
-                            <span>TypeScript</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 60%"></div>
+                            <div class="bar__value" style="width: 75%"></div>
                         </div>
                         <div class="font_new_white">
-                            기본적인 타입 선언과 함께 declare를 사용하여 외부 라이브러리와 전역 변수의 타입을 정의하여 사용한 경험이 있습니다.
-                            <br/>인터페이스와 제네릭을 통해 코드의 안전성과 가독성을 높이며, 타입 체크와 타입 추론을 활용하여 오류를 조기에 발견하고 안정적인 코드를 작성할 수 있습니다.
-                            <br/>TypeScript의 핵심 기능을 활용하여 중소규모의 프로젝트에서 효율적으로 작업할 수 있는 경험을 보유하고 있습니다.</div>
+                            혁신적인 기술과 솔루션을 개발하는 데 능숙합니다.
+                            <br/>새로운 기술을 연구하고, 실험적인 프로젝트를 진행하며, 기존 시스템의 문제를 해결하기 위해 창의적인 접근 방식을 적용할 수 있습니다.
+                            <br/>Map,OAuth,OpenAI와 같은 기술 트렌드를 분석하고, 새로운 아이디어를 실험하여 프로토타입을 구축하며, 이 과정을 통해 기술적 도전 과제를 해결하고 혁신을 주도하는 경험이 있습니다.
                     </li>
-
-                    <li class="bar">
-                        <div class="bar__metadata">
-                            <span>Git</span>
-                            <span>45%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 45%"></div>
-                        </div>
-                        <div class="font_new_white">
-                            기본적인 버전 관리와 협업 기능을 이해하고 있습니다.
-                            <br/>코드 변경 사항을 커밋하고, 브랜치를 생성 및 병합하며, Pull Request를 통해 코드 리뷰와 협업을 진행할 수 있습니다.
-                            <br/>또한, GitHub Actions를 사용하여 CI/CD 파이프라인을 자동화하고, 프로젝트의 빌드, 테스트, 배포 과정을 효율적으로 관리할 수 있는 경험을 보유하고 있습니다.
-                    </li>
-
-                    <li class="bar">
-                        <div class="bar__metadata">
-                            <span>AWS</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 40%"></div>
-                        </div>
-                        <div class="font_new_white">
-                            클라우드 서비스와 인프라 관리를 경험했습니다.
-                            <br/>AWS를 통해 프로젝트 배포, HTTPS 인증 설정, 도메인 사용을 경험해본 적이 있으며, EC2 인스턴스를 설정하고 관리할 수 있는 기본적인 경험도 보유하고 있습니다.
-                            <br/>AWS의 주요 서비스와 도구들을 활용하여 클라우드 기반 프로젝트를 효과적으로 지원할 수 있습니다.
-                    </li>
-
-
-                    <li class="bar">
-                        <div class="bar__metadata">
-                            <span>DataBases</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 50%"></div>
-                        </div>
-                        <div class="font_new_white">
-                            저는 MySQL과 MongoDB를 통합하여 약 50% 정도 활용할 수 있습니다.
-                            <br/>MySQL에서는 데이터베이스 설계, 쿼리 작성, 인덱스, 조인, 서브쿼리 등을 통해 관계형 데이터 관리를 능숙하게 수행할 수 있으며, 데이터베이스의 성능을 최적화할 수 있습니다.
-                            <br/>MongoDB에서는 비관계형 데이터 모델을 활용하여 유연한 데이터 저장 및 검색이 가능하며, NoSQL 데이터베이스의 기본적인 CRUD 작업과 집계 파이프라인을 활용한 경험이 있습니다.
-                            <br/>두 데이터베이스 시스템을 통합하여 복잡한 데이터 처리 요구사항에 맞는 솔루션을 설계하고 구현할 수 있습니다.
-                        </li>
-
-
-                        <li class="bar">
-                            <div class="bar__metadata">
-                                <span>Next.js</span>
-                                <span>40%</span>
-                            </div>
-                            <div class="bar__bg">
-                                <div class="bar__value" style="width: 40%"></div>
-                            </div>
-                            <div class="font_new_white">
-                                React 기반의 서버 사이드 렌더링 및 정적 사이트 생성을 통해 효율적인 웹 애플리케이션을 개발할 수 있습니다.
-                                <br/>페이지 기반 라우팅, 서버 사이드 렌더링(SSR), 정적 사이트 생성(SSG) 등을 이해하고, 데이터 패칭과 API 라우트를 설정하여 백엔드와의 통합을 원활하게 할 수 있습니다.
-                                <br/>또한, Next.js의 다양한 기능과 설정을 활용하여 성능 최적화와 사용자 경험을 향상시키는 작업을 수행할 수 있습니다.        
-                            </li>
-
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>Nest.js</span>
-                                    <span>40%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width: 40%"></div>
-                                </div>
-                                <div class="font_new_white">
-                                    TypeScript 기반의 서버 사이드 애플리케이션 개발에 능숙합니다.
-                                    <br/>NestJS의 모듈 시스템, 의존성 주입, 데코레이터 등을 활용하여 구조화된 코드베이스를 구축하고, 안정적인 RESTful API를 설계할 수 있습니다. 
-                                    <br/>또한, NestJS의 다양한 내장 기능과 미들웨어를 이용하여 인증, 데이터 유효성 검사, 예외 처리 등을 효과적으로 구현할 수 있습니다.
-                                    <br/>NestJS를 사용하여 확장 가능하고 유지 보수가 용이한 서버 애플리케이션을 개발할 수 있습니다.            
-                            </li>
-
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>R&D</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width: 75%"></div>
-                                </div>
-                                <div class="font_new_white">
-                                    혁신적인 기술과 솔루션을 개발하는 데 능숙합니다.
-                                    <br/>새로운 기술을 연구하고, 실험적인 프로젝트를 진행하며, 기존 시스템의 문제를 해결하기 위해 창의적인 접근 방식을 적용할 수 있습니다.
-                                    <br/>Map,OAuth,OpenAI와 같은 기술 트렌드를 분석하고, 새로운 아이디어를 실험하여 프로토타입을 구축하며, 이 과정을 통해 기술적 도전 과제를 해결하고 혁신을 주도하는 경험이 있습니다.
-                                </li>
-
-
-
                 </ul>
-
-
-
-               
             </section>
-
-
-        
         </section>
 
 
@@ -434,8 +292,8 @@
             <h2 class="title">Details</h2>
 
             <ul class="testimonials">
-                <li class="testimonial" id="HTML3D">
-                    <img src="./images/Html.png" alt="people2" class="testimonial__img">
+                <li class="testimonial">
+                    <img src="./images/Html.png" alt="HTML" class="testimonial__img">
                     <div class="testimonial__bubble">
                         <div class="bar__metadata">
                             <span>HTML</span>
@@ -449,29 +307,175 @@
                             <br/>간단한 웹사이트와 정적 페이지를 구축하는 데 필요한 HTML 지식을 갖추고 있으며, 스타일링과 스크립팅 작업을 지원하기 위한 탄탄한 기초를 보유하고 있습니다.</div>
                     </div>
                 </li>
-
-                <!-- <li class="testimonial">
-                    <img src="images/testimonials/people2.webp" alt="people2" class="testimonial__img">
-                    <div class="testimonial__bubble">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sapiente mollitia quas facilis
-                            a eligendi iste veniam? Eaque cumque cum magni! Explicabo, id sit. Voluptate cupiditate
-                            saepe repellat soluta magni!
-                        </p>
-                        <p><a href="#" class="testimonial__bubble__name">Anna Jin</a>/Samsung</p>
-                    </div>
-                </li> -->
-<!-- 
                 <li class="testimonial">
-                    <img src="images/testimonials/people3.webp" alt="people3" class="testimonial__img">
-                    <div class="testimonial__bubble">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi accusantium voluptate porro
-                            odio, nisi tempora magni minima id, illo facilis atque dolores, qui commodi! Labore tenetur
-                            fugiat at dignissimos alias.
-                        </p>
-                        <p><a href="#" class="testimonial__bubble__name">Hamster</a>/cage</p>
+                    
+
+                    <div class="testimonial__img">
+                        <img src="./images/Css.png" alt="CSS" style="height: 140px; width: 140px; padding-top: 25px;">
                     </div>
-                </li> -->
+
+
+                    <div class="testimonial__bubble">
+                        <div class="bar__metadata">
+                            <span>CSS</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 65%"></div>
+                        </div>
+                        <div class="font_new_black">기본적인 스타일링부터 애니메이션과 트랜지션을 통한 인터랙션까지 구현할 수 있습니다.
+                            <br/>웹 페이지의 레이아웃과 디자인을 세부적으로 조정하고, Flex와 Grid를 사용해 반응형 디자인을 구성합니다.
+                            <br/>또한, 트랜지션과 애니메이션을 사용해 사용자에 생동감을 부여할 수 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="testimonial">
+                    <div class="testimonial__img" style="position: relative;">
+                        <img src="./images/Js.png" alt="JavaScript" style="height: 130px; width: 240px; padding-top: 25px; position:absolute; left: -44px;">
+                    </div>
+                    
+                    <div class="testimonial__bubble">
+                        <div class="bar__metadata">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 70%"></div>
+                        </div>
+                        <div class="font_new_black">동적인 웹 기능을 구현하는 데 능숙합니다.
+                            <br/>DOM 조작, 이벤트 처리, 비동기 작업(콜백, 프로미스, async/await) 등을 통해 사용자의 인터랙션에 실시간으로 반응하는 웹 애플리케이션을 개발할 수 있습니다.
+                            <br/>또한, API 호출을 통해 서버와 데이터를 주고받고, 데이터를 처리하는 작업에 익숙하며, ES6+ 문법을 활용하여 효율적인 코드 작성을 할 수 있습니다.
+                            <br/>간단한 애니메이션 구현과 성능 최적화에도 기본적인 이해를 갖추고 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="testimonial">
+
+                    <div class="testimonial__img">
+                        <img src="./images/TS.png" alt="TypeScript" style="height: 130px; width: 140px; padding-top: 20px;">
+                    </div>
+
+                   
+                    <div class="testimonial__bubble">
+                        <div class="bar__metadata">
+                            <span>TypeScript</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 60%"></div>
+                        </div>
+                        <div class="font_new_black">기본적인 타입 선언과 함께 declare를 사용하여 외부 라이브러리와 전역 변수의 타입을 정의하여 사용한 경험이 있습니다.
+                            <br/>인터페이스와 제네릭을 통해 코드의 안전성과 가독성을 높이며, 타입 체크와 타입 추론을 활용하여 오류를 조기에 발견하고 안정적인 코드를 작성할 수 있습니다.
+                            <br/>TypeScript의 핵심 기능을 활용하여 중소규모의 프로젝트에서 효율적으로 작업할 수 있는 경험을 보유하고 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="testimonial">
+                    <div class="testimonial__img" style="position: relative;">
+                        <img src="./images/Git.png" alt="Git" style="height: 130px; width: 280px; padding-top: 25px; position:absolute; left: -60px;">
+                    </div>
+
+                    <div class="testimonial__bubble">
+                        <div class="bar__metadata">
+                            <span>Git</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 45%"></div>
+                        </div>
+                        <div class="font_new_black">기본적인 버전 관리와 협업 기능을 이해하고 있습니다.
+                            <br/>코드 변경 사항을 커밋하고, 브랜치를 생성 및 병합하며, Pull Request를 통해 코드 리뷰와 협업을 진행할 수 있습니다.
+                            <br/>또한, GitHub Actions를 사용하여 CI/CD 파이프라인을 자동화하고, 프로젝트의 빌드, 테스트, 배포 과정을 효율적으로 관리할 수 있는 경험을 보유하고 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="testimonial">
+                    <img src="./images/AWS.png" alt="AWS" class="testimonial__img">
+                    <div class="testimonial__bubble">
+                        <div class="bar__metadata">
+                            <span>AWS</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 40%"></div>
+                        </div>
+                        <div class="font_new_black">클라우드 서비스와 인프라 관리를 경험했습니다.
+                            <br/>AWS를 통해 프로젝트 배포, HTTPS 인증 설정, 도메인 사용을 경험해본 적이 있으며, EC2 인스턴스를 설정하고 관리할 수 있는 기본적인 경험도 보유하고 있습니다.
+                            <br/>AWS의 주요 서비스와 도구들을 활용하여 클라우드 기반 프로젝트를 효과적으로 지원할 수 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="testimonial">
+                    <div class="testimonial__img">
+                        <img src="./images/DB.png" alt="DataBases" style="height: 140px; width: 130px; padding-top: 15px;">
+                    </div>
+                    <div class="testimonial__bubble">
+                        <div class="bar__metadata">
+                            <span>DataBases</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 50%"></div>
+                        </div>
+                        <div class="font_new_black">저는 MySQL과 MongoDB를 통합하여 약 50% 정도 활용할 수 있습니다.
+                            <br/>MySQL에서는 데이터베이스 설계, 쿼리 작성, 인덱스, 조인, 서브쿼리 등을 통해 관계형 데이터 관리를 능숙하게 수행할 수 있으며, 데이터베이스의 성능을 최적화할 수 있습니다.
+                            <br/>MongoDB에서는 비관계형 데이터 모델을 활용하여 유연한 데이터 저장 및 검색이 가능하며, NoSQL 데이터베이스의 기본적인 CRUD 작업과 집계 파이프라인을 활용한 경험이 있습니다.
+                            <br/>두 데이터베이스 시스템을 통합하여 복잡한 데이터 처리 요구사항에 맞는 솔루션을 설계하고 구현할 수 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="testimonial">
+                    <img src="./images/Next.png" alt="Next.js" class="testimonial__img">
+                    <div class="testimonial__bubble">
+                        <div class="bar__metadata">
+                            <span>Next.js</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 40%"></div>
+                        </div>
+                        <div class="font_new_black">React 기반의 서버 사이드 렌더링 및 정적 사이트 생성을 통해 효율적인 웹 애플리케이션을 개발할 수 있습니다.
+                            <br/>페이지 기반 라우팅, 서버 사이드 렌더링(SSR), 정적 사이트 생성(SSG) 등을 이해하고, 데이터 패칭과 API 라우트를 설정하여 백엔드와의 통합을 원활하게 할 수 있습니다.
+                            <br/>또한, Next.js의 다양한 기능과 설정을 활용하여 성능 최적화와 사용자 경험을 향상시키는 작업을 수행할 수 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="testimonial">
+                    <div class="testimonial__img">
+                        <img src="./images/Nest.png" alt="Nest.js" style="height: 150px; width: 150px;">
+                    </div>
+                    
+                    <div class="testimonial__bubble">
+                        <div class="bar__metadata">
+                            <span>Nest.js</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 40%"></div>
+                        </div>
+                        <div class="font_new_black">TypeScript 기반의 서버 사이드 애플리케이션 개발에 능숙합니다.
+                            <br/>NestJS의 모듈 시스템, 의존성 주입, 데코레이터 등을 활용하여 구조화된 코드베이스를 구축하고, 안정적인 RESTful API를 설계할 수 있습니다. 
+                            <br/>또한, NestJS의 다양한 내장 기능과 미들웨어를 이용하여 인증, 데이터 유효성 검사, 예외 처리 등을 효과적으로 구현할 수 있습니다.
+                            <br/>NestJS를 사용하여 확장 가능하고 유지 보수가 용이한 서버 애플리케이션을 개발할 수 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="testimonial">
+                    <img src="./images/RnD.png" alt="RnD" class="testimonial__img">
+                    <div class="testimonial__bubble">
+                        <div class="bar__metadata">
+                            <span>R&D</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 75%"></div>
+                        </div>
+                        <div class="font_new_black">혁신적인 기술과 솔루션을 개발하는 데 능숙합니다.
+                            <br/>새로운 기술을 연구하고, 실험적인 프로젝트를 진행하며, 기존 시스템의 문제를 해결하기 위해 창의적인 접근 방식을 적용할 수 있습니다.
+                            <br/>Map,OAuth,OpenAI와 같은 기술 트렌드를 분석하고, 새로운 아이디어를 실험하여 프로토타입을 구축하며, 이 과정을 통해 기술적 도전 과제를 해결하고 혁신을 주도하는 경험이 있습니다.</div>
+                    </div>
+                </li>
+
             </ul>
         </section>
 
