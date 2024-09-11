@@ -45,6 +45,12 @@ body {
   margin: 0;
 }
 
+p,
+h2 {
+  max-width: 100%;
+  word-break: keep-all;
+}
+
 h1,
 h2,
 h3,
@@ -264,12 +270,22 @@ button:focus {
 .cmd-header {
   background-color: #1a1a1a;
   padding: 5px 10px;
+  min-height: 22px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.cmd-header-title {
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .cmd-header-buttons {
+  position: absolute;
+  top: 3px;
+  left: 5px;
   display: flex;
   gap: 5px;
 }
@@ -327,8 +343,8 @@ button:focus {
 }
 
 .mainStack_logo {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
 
   border-radius: 100%;
   border: 1px solid var(--color-accent);
@@ -484,6 +500,7 @@ button:focus {
   position: relative;
   border-radius: 8%;
   overflow: hidden;
+  min-width: 253px;
 }
 
 .project__img {
@@ -515,6 +532,10 @@ button:focus {
 .project__metadata p {
   text-align: start;
   padding: 0 1;
+}
+
+.project__detail {
+  margin-bottom: 0.2rem;
 }
 
 .project__metadata:hover {
@@ -657,6 +678,10 @@ button:focus {
   font-size: 15px;
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.7);
+  text-align: start;
+  margin-top: 0.4rem;
+  margin-left: 0.8rem;
+  word-break: keep-all;
 }
 
 .font_new_white {
@@ -664,6 +689,42 @@ button:focus {
   font-size: 15px;
   line-height: 1.8;
   color: rgba(254, 254, 254, 0.7);
+}
+
+@media screen and (max-width: 1080px) {
+  .mainStack_logo {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  .project__detail {
+    font-size: 0.7rem;
+    font-weight: 900;
+  }
+
+  .mainStack_logo {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .project__detail {
+    font-size: 0.8rem;
+    font-weight: 900;
+  }
+
+  .mainStack_logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -720,18 +781,52 @@ button:focus {
     padding-bottom: 3rem;
   }
 
+  .home__box {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .home__title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
 
+  .major__title {
+    font-size: 1.2rem;
+  }
+
   .majors {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem;
   }
 
   .major {
-    max-width: 25rem;
+    width: 49%;
+    max-height: 140px;
+    padding: 0.2rem;
+    position: relative;
+  }
+
+  .major__detail {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 1rem;
+
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: black;
+  }
+
+  .major:hover .major__detail {
+    display: flex;
+    align-items: center;
   }
 
   .job {
@@ -740,6 +835,7 @@ button:focus {
 
   .skills {
     grid-template-columns: 1fr;
+    margin: 0;
   }
 
   .categories {
@@ -748,14 +844,24 @@ button:focus {
 
   .category {
     width: 100%;
+    padding: 0.5rem;
   }
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .project__metadata {
+    display: none;
+  }
+
+  .testimonials {
+    margin: 0;
+  }
+
   .testimonial {
     flex-direction: column;
+    gap: 0.3rem;
   }
 
   .testimonial:nth-child(even) .testimonial__img {
@@ -768,5 +874,22 @@ button:focus {
     height: 3rem;
     bottom: 1.5rem;
     right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .section {
+    padding: 10% 8%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .home__title {
+    font-size: 1.8rem;
   }
 }

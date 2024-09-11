@@ -45,7 +45,7 @@
     <header class="header">
         <div class="header__logo">
             <img class="header__logo__img" src="./images/hamsterlooking-removebg.png" alt="logo">
-            <h1 class="header__logo__title"><a href="#">Oniri1 ProtFolio</a></h1>
+            <h1 class="header__logo__title"><a href="#">oniri1</a></h1>
         </div>
 
         <nav class="header__nav">
@@ -70,7 +70,7 @@
         <!-- Home -->
         <section id="home" >
             <div class="max-container home__container">
-                <div style="width: 100%; display: flex;">
+                <div class="home__box" style="width: 100%; display: flex;">
                     <img class="home__avatar" src="./images/me.png" alt="main hamster" />
                     <div class="home">
                         <div>
@@ -93,8 +93,11 @@
                     <div class="cmd-header-button" style="border-radius: 100%; background-color: rgb(255, 189, 34);"></div>
                     <div class="cmd-header-button" style="border-radius: 100%; background-color: rgb(225, 0, 0);"></div>
                 </div>
+
+                <div class="cmd-header-title">저를 간단하게 소개해 보겠습니다.</div>
+
             </div>
-            <strong class="home__title--strong">저를 간단하게 소개해 보겠습니다.</strong>
+            <strong class="home__title--strong"></strong>
         </div>
         </section>
 
@@ -107,31 +110,31 @@
                 <li class="major">
                     <i class="fa-brands fa-html5 major__icon"></i>
                     <p class="major__title">FrontEnd</p>
-                    <p>Next.js, React, TailwindCss</p>
+                    <p class="major__detail">Next.js, React, TailwindCss</p>
                 </li>
 
                 <li class="major">
                     <i class="fa fa-server major__icon"></i>
                     <p class="major__title">BackEnd</p>
-                    <p>Nest.js, Express.js, Node.js</p>
+                    <p class="major__detail">Nest.js, Express.js, Node.js</p>
                 </li>
 
                 <li class="major">
                     <i class="fa fa-database major__icon"></i>
                     <p class="major__title">DataBases</p>
-                    <p>MySQL, MongoDB</p>
+                    <p class="major__detail">MySQL, MongoDB</p>
                 </li>
 
                 <li class="major">
                     <i class="fa fa-book major__icon"></i>
                     <p class="major__title">Library</p>
-                    <p>Axios, Socket.io, Sequelize, Mongoose</p>
+                    <p class="major__detail">Axios, Socket.io, Sequelize, Mongoose</p>
                 </li>
                
                 <li class="major">
                     <i class="fa fa-stack-overflow major__icon"></i>
                     <p class="major__title">Open API</p>
-                    <p>OpenAI, naverMap, OAuth</p>
+                    <p class="major__detail">OpenAI, naverMap, OAuth</p>
                 </li>
 
             </ul>
@@ -161,7 +164,8 @@
                             <img src="./images/projects/openAI.png" alt="project3" class="project__img">
                             <div class="project__metadata" data-projectid="3">
                                 <h3 class="project__title">AI_InterViewSite</h3>
-                                <p id="Three">next,nest,OpenAI를 활용해 간단한 AI 면접 서비스를 제작하였습니다.</p>
+                                <p class="project__detail">인원 : 1명, 소요시간: 2주</p>
+                                <p class="project__detail">next, nest, OpenAI를 활용한 AI 면접 서비스</p>
                                     
                                 <div class="mainStack_logos">
                                     <img src="./images/Next.png" alt="next" class="mainStack_logo">
@@ -181,7 +185,8 @@
                             <img src="./images/projects/HamsterMarket.png" alt="project2" class="project__img">
                             <div class="project__metadata" data-projectid="2">
                                 <h3 class="project__title">Hamster_Market</h3>
-                                <p id="Two">NaverMap,OAuth를 R&D 하여 React,Express,TypeScript를 기반으로 중소규모의 쇼핑몰 서비스를 제작하였습니다. </p>
+                                <p class="project__detail">인원 : 3명, 소요시간: 3주</p>
+                                <p class="project__detail">NaverMap, TypeScript, React, Express, OAuth를 활용한 쇼핑몰 서비스 </p>
                                 <div class="mainStack_logos">
                                     <img src="./images/react.png" alt="react" class="mainStack_logo">
                                     <img src="./images/tailwindcss.png" alt="tailwindcss"class="mainStack_logo">
@@ -201,7 +206,8 @@
                             <img src="./images/projects/chatSite.jpg" alt="project1" class="project__img">
                             <div class="project__metadata" data-projectid="1">
                                 <h3 class="project__title">Colosseum</h3>
-                                <p>HTML,CSS,JavaScript,Express,Socket.io를 활용하여 간단한 채팅 사이트를 제작하였습니다.</p>
+                                <p class="project__detail">인원 : 2명, 소요시간: 2주</p>
+                                <p class="project__detail">Express, Socket.io, JavaScript, HTML, CSS를 활용한 채팅 서비스</p>
 
                                 <div class="mainStack_logos">
                                     <img src="./images/HTML.png" alt="HTML" class="mainStack_logo">
@@ -243,7 +249,7 @@
                         </div>
 
                         <!-- 바꿀 링크 -->
-                        <a href="#" id="skillsHref" target="_blank"><h3 class="skills__title">프로젝트 기획파일 확인하기</h3></a>
+                        <a href="#" id="skillsHref" target="_blank"><h3 class="skills__title">프로젝트 파일</h3></a>
                         
                     </section>
 
