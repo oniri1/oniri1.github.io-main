@@ -46,7 +46,8 @@ body {
 }
 
 p,
-h2 {
+h2,
+strong {
   max-width: 100%;
   word-break: keep-all;
 }
@@ -207,6 +208,10 @@ button:focus {
   opacity: 1;
 }
 
+.home__box {
+  margin-bottom: 1rem;
+}
+
 .home__container {
   position: relative;
   display: flex;
@@ -230,8 +235,11 @@ button:focus {
   margin-bottom: 1rem;
 }
 
+.home__title--strong--font {
+  font-size: 1rem;
+}
+
 .home__title--strong {
-  font-size: 1.2rem;
   color: var(--color-accent);
 }
 
@@ -258,8 +266,8 @@ button:focus {
 .cmd-window {
   width: 70%;
   height: 200px;
-  border: 2px solid #333; /* 창 테두리 */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 그림자 */
+  border: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   overflow-y: auto;
   overflow-x: auto;
   background-color: #000;
@@ -267,10 +275,15 @@ button:focus {
   margin-bottom: 100px;
 }
 
+.cmd-outer {
+  padding-left: 0.5rem;
+  text-align: start;
+}
+
 .cmd-header {
   background-color: #1a1a1a;
   padding: 5px 10px;
-  min-height: 22px;
+  height: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,7 +499,7 @@ button:focus {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   gap: 1rem;
   transition: all 250ms ease-out;
 }
@@ -696,9 +709,16 @@ button:focus {
     width: 38px;
     height: 38px;
   }
+  .home__title--strong--font {
+    font-size: 0.95rem;
+  }
 }
 
 @media screen and (max-width: 982px) {
+  .home__title--strong--font {
+    font-size: 0.9rem;
+  }
+
   .project__detail {
     font-size: 0.7rem;
     font-weight: 900;
@@ -711,6 +731,10 @@ button:focus {
 }
 
 @media screen and (max-width: 870px) {
+  .home__title--strong--font {
+    font-size: 0.8rem;
+  }
+
   .project__detail {
     font-size: 0.8rem;
     font-weight: 900;
@@ -729,6 +753,10 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   /* wave */
+
+  .home__title--strong--font {
+    font-size: 0.75rem;
+  }
 
   .home__wave {
     bottom: -50px;
@@ -787,7 +815,6 @@ button:focus {
   }
 
   .home__title {
-    font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
 
@@ -822,6 +849,10 @@ button:focus {
     height: 100%;
     opacity: 0.8;
     background-color: black;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   .major:hover .major__detail {
@@ -878,6 +909,14 @@ button:focus {
 }
 
 @media screen and (max-width: 600px) {
+  .cmd-window {
+    width: 80%;
+  }
+
+  .home__title--strong--font {
+    font-size: 0.7rem;
+  }
+
   .projects {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -888,8 +927,55 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .home__title--strong--font {
+    font-size: 0.65rem;
+  }
+
+  .cmd-window {
+    height: 230px;
+  }
+
+  .cmd-header {
+    height: 16px;
+  }
+
+  .cmd-header-title {
+    font-size: 8px;
+    font-weight: 300;
+  }
+
+  .cmd-header-buttons {
+    top: 2.5px;
+    left: 2.5px;
+    gap: 2.5px;
+  }
+
+  .cmd-header-button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .skills__title {
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
 @media screen and (max-width: 425px) {
+  .cmd-window {
+    width: 80%;
+    height: 250px;
+  }
+
   .home__title {
     font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .cmd-window {
+    width: 90%;
+    height: 250px;
   }
 }

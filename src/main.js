@@ -11,11 +11,13 @@ document.addEventListener("scroll", () => {
   }
 });
 
-const home = document.querySelector(".home");
-const homeHeight = home.offsetHeight;
+const home = document.querySelector(".home__box");
+
 const arrow_up = document.querySelector(".arrow-up");
 
 document.addEventListener("scroll", () => {
+  const homeHeight = home.offsetHeight;
+
   home.style.opacity = 1 - window.scrollY / homeHeight;
 
   if (window.scrollY > homeHeight / 2) {
