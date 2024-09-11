@@ -928,6 +928,14 @@ button:focus {
 }
 
 @media screen and (max-width: 480px) {
+  .header {
+    padding: 0.4rem;
+  }
+
+  .Mobile_menu_toggle {
+    top: 0.9rem;
+  }
+
   .home__title--strong--font {
     font-size: 0.65rem;
   }
