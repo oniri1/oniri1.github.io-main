@@ -645,6 +645,7 @@ button:focus {
   top: 0;
   left: 0;
   width: 100%;
+
   overflow: hidden;
   line-height: 0;
 }
@@ -653,7 +654,7 @@ button:focus {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 180px;
+  height: 70px;
 }
 
 .footer__arrow_top .shape-fill {
@@ -703,6 +704,13 @@ button:focus {
   font-size: 15px;
   line-height: 1.8;
   color: rgba(254, 254, 254, 0.7);
+}
+
+#emailValue:hover {
+  color: var(--color-accent);
+}
+#phoneValue:hover {
+  color: var(--color-accent);
 }
 
 @media screen and (max-width: 1080px) {
