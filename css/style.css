@@ -709,8 +709,9 @@ button:focus {
 #emailValue:hover {
   color: var(--color-accent);
 }
-#phoneValue:hover {
-  color: var(--color-accent);
+
+#phoneValue {
+  pointer-events: none;
 }
 
 @media screen and (max-width: 1080px) {
@@ -765,6 +766,13 @@ button:focus {
 
   .home__title--strong--font {
     font-size: 0.75rem;
+  }
+
+  #phoneValue:hover {
+    color: var(--color-accent);
+  }
+  #phoneValue {
+    pointer-events: all;
   }
 
   .home__wave {
