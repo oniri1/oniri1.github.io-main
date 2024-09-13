@@ -5,7 +5,7 @@ const sectionIDs = [
   "#about",
   "#Worked",
   "#skills",
-  "#Testimonials",
+  "#skills__Details",
   "#Contact",
 ];
 const sections = sectionIDs.map((id) => document.querySelector(id));

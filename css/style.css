@@ -577,24 +577,24 @@ button:focus {
   background-color: var(--color-accent);
 }
 
-/* testimonial */
+/* skill__Detail */
 
-.testimonials {
+.skill__Details {
   margin: 3rem;
 }
 
-.testimonial {
+.skill__Detail {
   display: flex;
   gap: 2rem;
   align-items: center;
   margin-bottom: 3rem; //백
 }
 
-.testimonial:nth-child(even) .testimonial__img {
+.skill__Detail:nth-child(even) .skill__Detail__img {
   order: 1;
 }
 
-.testimonial__img {
+.skill__Detail__img {
   min-width: 150px;
   max-width: 150px;
   height: 150px;
@@ -605,7 +605,7 @@ button:focus {
     10px 10px 30px 4px rgba(45, 78, 255, 0.15);
 }
 
-.testimonial__bubble {
+.skill__Detail__bubble {
   padding: 1rem;
 
   border-radius: 8px;
@@ -613,7 +613,7 @@ button:focus {
     10px 10px 30px 4px rgba(45, 78, 255, 0.15);
 }
 
-.testimonial__bubble__name {
+.skill__Detail__bubble__name {
   color: var(--color-accent);
   font-weight: bold;
   filter: brightness(70%);
@@ -921,16 +921,16 @@ button:focus {
     display: none;
   }
 
-  .testimonials {
+  .skill__Details {
     margin: 0;
   }
 
-  .testimonial {
+  .skill__Detail {
     flex-direction: column;
     gap: 0.8rem;
   }
 
-  .testimonial:nth-child(even) .testimonial__img {
+  .skill__Detail:nth-child(even) .skill__Detail__img {
     order: 0;
   }
 
