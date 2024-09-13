@@ -33,7 +33,7 @@
     <script type="module" src="./src/projects.js" defer></script>
     <script type="module" src="./src/active_menu.js" defer> </script>
     <script type="module" src="./src/type.js" defer> </script>
-    <script type="module" src="./src/skillsHandler.js" defer></script>
+    <script type="module" src="./src/projectShowHandler.js" defer></script>
     <script type="module" src="./src/emailHandler.js" defer></script>
 
 
@@ -51,10 +51,9 @@
         <nav class="header__nav">
             <ul class="header__menu">
                 <li><a class="header__menu__item active" href="#home">Home</a></li>
-                <li><a class="header__menu__item" href="#about">About</a></li>
+                <li><a class="header__menu__item" href="#skills__Details">Skills</a></li>
                 <li><a class="header__menu__item" href="#Worked">Projects</a></li>
-                <li><a class="header__menu__item" href="#skills">Skills</a></li>
-                <li><a class="header__menu__item" href="#skills__Details">Details</a></li>
+                <li><a class="header__menu__item" href="#summation">Summation</a></li>
                 <li><a class="header__menu__item" href="#Contact">Contact</a></li>
             </ul>
         </nav>
@@ -81,12 +80,8 @@
                 </div>
             </div>
 
-
-<!-- 수정 -->
-
         
         <div class="cmd-window" >
-            <!-- CMD 창의 윗줄 (제목 표시줄) -->
             <div class="cmd-header">
                 <div class="cmd-header-buttons">
                     <div class="cmd-header-button" style="border-radius: 100%; background-color: rgb(19, 228, 19); "></div>
@@ -105,9 +100,319 @@
         </div>
         </section>
 
-        <!-- About -->
-        <section id="about" class="section max-container">
-            <h2 class="title">About</h2>
+        <!-- skills__Details -->
+        <section id="skills__Details" class="section max-container">
+            <h2 class="title">Skills</h2>
+
+            <ul class="skill__Details">
+                <li class="skill__Detail">
+                    <img src="./images/HTML.png" alt="HTML" class="skill__Detail__img">
+                    <div class="skill__Detail__bubble">
+                        <div class="bar__metadata">
+                            <span>HTML</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 50%"></div>
+                        </div>
+                        <div class="font_new_black">웹 페이지의 구조와 콘텐츠 마크업에 능숙합니다.
+                            <br/>기본적인 시맨틱 태그로 레이아웃을 구현하기 위해 적절한 HTML 요소들을 사용합니다.
+                            <br/>간단한 웹사이트와 페이지를 구축하는 데 필요한 HTML 지식을 갖추고 있으며, 스타일링과 스크립팅 작업을 지원하기 위한 기초 지식을 보유하고 있습니다.</div>
+                    </div>
+                </li>
+                <li class="skill__Detail">
+                    
+
+                    <div class="skill__Detail__img">
+                        <img src="./images/cssLogo.png" alt="CSS" style="height: 140px; width: 140px; padding-top: 25px;">
+                    </div>
+
+
+                    <div class="skill__Detail__bubble">
+                        <div class="bar__metadata">
+                            <span>CSS</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 65%"></div>
+                        </div>
+                        <div class="font_new_black">기본적인 스타일링부터 애니메이션과 트랜지션을 통한 인터랙션까지 구현할 수 있습니다.
+                            <br/>웹 페이지의 레이아웃과 디자인을 세부적으로 조정하고, Flex와 Grid를 사용해 반응형 디자인을 구성합니다.
+                            <br/>또한, 트랜지션과 애니메이션을 사용해 사용자에 생동감을 부여할 수 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="skill__Detail">
+                    <div class="skill__Detail__img" style="position: relative;">
+                        <img src="./images/Js.png" alt="JavaScript" style="height: 130px; width: 240px; padding-top: 25px; position:absolute; left: -44px;">
+                    </div>
+                    
+                    <div class="skill__Detail__bubble">
+                        <div class="bar__metadata">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 70%"></div>
+                        </div>
+                        <div class="font_new_black">JS를 통한 웹 기능을 구현하는 데 능숙합니다.
+                            <br/>DOM 조작, 이벤트 처리, 비동기 작업(콜백, 프로미스, async/await) 등을 통해 사용자의 인터랙션에 실시간으로 반응하는 웹 애플리케이션을 개발할 수 있습니다.
+                            <br/>또한, API 호출을 통해 서버와 데이터를 주고받고, 데이터를 처리하는 작업에 익숙하며, ES6 문법을 활용하여 코드를 작성을 할 수 있습니다.
+                            <br/>간단한 애니메이션 구현과 성능 향상을 위한 기본적인 이해를 갖추고 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="skill__Detail">
+
+                    <div class="skill__Detail__img">
+                        <img src="./images/TS.png" alt="TypeScript" style="height: 130px; width: 140px; padding-top: 20px;">
+                    </div>
+
+                   
+                    <div class="skill__Detail__bubble">
+                        <div class="bar__metadata">
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 60%"></div>
+                        </div>
+                        <div class="font_new_black">기본적인 타입 선언 및 라이브러리에 declare를 사용하여 전역 변수의 타입을 정의하여 사용한 경험이 있습니다.
+                            <br/>인터페이스와 타입 지정을 통해 코드의 안전성과 가독성을 높이며, 타입 체크와 타입 추론을 활용하여 오류를 조기에 발견하고 안정적인 코드를 작성할 수 있습니다.
+                            <br/>TypeScript의 핵심 기능을 활용하여 프로젝트를 주도한 경험을 보유하고 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="skill__Detail">
+                    <div class="skill__Detail__img" style="position: relative;">
+                        <img src="./images/git.png" alt="Git" style="height: 130px; width: 280px; padding-top: 25px; position:absolute; left: -60px;">
+                    </div>
+
+                    <div class="skill__Detail__bubble">
+                        <div class="bar__metadata">
+                            <span>Git</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 45%"></div>
+                        </div>
+                        <div class="font_new_black">기본적인 버전 관리와 협업 기능을 이해하고 있습니다.
+                            <br/>코드 변경 사항을 커밋하고, 브랜치를 생성 및 병합하며, Pull Request를 통해 코드 리뷰와 협업을 진행할 수 있습니다.
+                            <br/>또한, GitHub Actions를 사용하여 CI/CD 파이프라인을 자동화하고, 프로젝트의 배포 과정을 효율적으로 관리할 수 있는 경험을 보유하고 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="skill__Detail">
+                    <img src="./images/AWS.png" alt="AWS" class="skill__Detail__img">
+                    <div class="skill__Detail__bubble">
+                        <div class="bar__metadata">
+                            <span>AWS</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 40%"></div>
+                        </div>
+                        <div class="font_new_black">클라우드 서비스와 인프라 관리를 경험했습니다.
+                            <br/>AWS를 통해 프로젝트 배포, HTTPS 인증 설정, 도메인 사용을 경험해본 적이 있으며, EC2 인스턴스를 설정하고 관리할 수 있는 기본적인 경험도 보유하고 있습니다.
+                            <br/>AWS의 주요 서비스와 도구들을 활용하여 클라우드 기반 프로젝트를 효과적으로 배포할 수 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="skill__Detail">
+                    <div class="skill__Detail__img">
+                        <img src="./images/DB.png" alt="DataBases" style="height: 140px; width: 130px; padding-top: 15px;">
+                    </div>
+                    <div class="skill__Detail__bubble">
+                        <div class="bar__metadata">
+                            <span>DataBases</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 50%"></div>
+                        </div>
+                        <div class="font_new_black">저는 MySQL과 MongoDB를 사용하였습니다.
+                            <br/>MySQL에서는 데이터베이스 설계, 쿼리 작성, 인덱스, 조인, 서브쿼리 등을 통해 관계형 데이터 관리를 수행할 수 있으며, 데이터베이스의 성능을 향상 시킬 수 있습니다.
+                            <br/>MongoDB에서는 비관계형 데이터 모델을 활용하여 유연한 데이터 저장 및 검색이 가능하며, NoSQL 데이터베이스의 기본적인 CRUD 작업과 집계 파이프라인을 활용한 경험이 있습니다.
+                            <br/>두 데이터베이스 서버를 통합 활용하여 복잡한 데이터 처리 요구사항에 맞는 기능을 설계하고 구현할 수 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="skill__Detail">
+                    <img src="./images/Next.png" alt="Next.js" class="skill__Detail__img">
+                    <div class="skill__Detail__bubble">
+                        <div class="bar__metadata">
+                            <span>Next.js</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 40%"></div>
+                        </div>
+                        <div class="font_new_black">React 기반의 서버 사이드 렌더링을 통해 효율적인 웹 애플리케이션을 개발할 수 있습니다.
+                            <br/>app 기반 라우팅, 서버 사이드 렌더링(SSR), 정적 사이트 생성(SSG) 등을 이해하고, 데이터 패칭과 API 라우트를 설정하여 백엔드와의 통합을 원활하게 할 수 있습니다.
+                            <br/>또한, Next.js의 다양한 기능과 설정을 활용하여 사용자 경험을 향상시키는 작업을 수행할 수 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="skill__Detail">
+                    <div class="skill__Detail__img">
+                        <img src="./images/Nest.png" alt="Nest.js" style="height: 150px; width: 150px; object-fit: contain;">
+                    </div>
+                    
+                    <div class="skill__Detail__bubble">
+                        <div class="bar__metadata">
+                            <span>Nest.js</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 40%"></div>
+                        </div>
+                        <div class="font_new_black">TypeScript 기반의 서버 애플리케이션 개발 경험이 있습니다.
+                            <br/>NestJS의 모듈 시스템, 의존성 주입, 데코레이터 등을 활용하여 구조화된 코드베이스를 구축하고, 안정적인 REST API를 설계할 수 있습니다. 
+                            <br/>또한, NestJS의 다양한 내장 기능과 미들웨어를 이용하여 인증, 데이터 유효성 검사, 예외 처리 등을 효과적으로 구현할 수 있습니다.
+                            <br/>NestJS를 사용하여 확장 가능하고 유지 보수가 용이한 서버 애플리케이션을 개발할 수 있습니다.</div>
+                    </div>
+                </li>
+
+                <li class="skill__Detail">
+                    <img src="./images/RnD.png" alt="RnD" class="skill__Detail__img">
+                    <div class="skill__Detail__bubble">
+                        <div class="bar__metadata">
+                            <span>R&D</span>
+                        </div>
+                        <div class="bar__bg">
+                            <div class="bar__value" style="width: 75%"></div>
+                        </div>
+                        <div class="font_new_black">혁신적인 기술과 솔루션을 개발하는 데 능숙합니다.
+                            <br/>새로운 기술을 연구하고, 실험적인 프로젝트를 진행하며, 기존 시스템의 문제를 해결하기 위해 창의적인 접근 방식을 적용할 수 있습니다.
+                            <br/>Map,OAuth,OpenAI와 같은 기술 트렌드를 분석하고, 새로운 아이디어를 실험하여 프로토타입을 구축하며, 이 과정을 통해 기술적 도전 과제를 해결하고 혁신을 주도하는 경험이 있습니다.</div>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+        <section id="colorBox">
+            <!-- Worked -->
+            <section id="Worked" class="section">
+                <div class="max-container">
+                    <h2 class="title">Projects</h2>
+                    <p class="description">
+                        저의 프로젝트들을 간단하게 소개합니다.</p>
+    
+                    <ul class="categories">
+                        <li><button class="category category--selected" data-category="all">ALL <span
+                                    class="category__count">3</span></button></li>
+                        <li><button class="category" data-category="front-end">Personal_Project <span
+                                    class="category__count">1</span></button></li>
+                        <li><button class="category" data-category="back-end">Team-Project <span
+                                    class="category__count">2</span></button></li>
+                    </ul>
+    
+                    <ul class="projects" id="projectClick">
+                        <li class="project" data-type="front-end">
+                            <a href="#project__shower" data-projectid="3">
+                                <img src="./images/projects/openAI.png" alt="project3" class="project__img">
+                                <div class="project__metadata">
+                                    <h3 class="project__title">AI_InterViewSite</h3>
+                                    <p class="project__detail">인원 : 1명, 소요시간: 2주</p>
+                                    <p class="project__detail">next, nest, OpenAI를 활용한 AI 면접 서비스</p>
+                                        
+                                    <div class="mainStack_logos">
+                                        <img src="./images/Next.png" alt="next" class="mainStack_logo">
+                                        <img src="./images/Nest.png" alt="nest"class="mainStack_logo">
+                                        <img src="./images/tailwindcss.png" alt="tailwindcss"class="mainStack_logo">
+                                        <img src="./images/TS.png" alt="TypeScript"class="mainStack_logo">
+                                        <img src="./images/AI.png" alt="openAI"class="mainStack_logo">
+                                        <img src="./images/Axios.png" alt="axios"class="mainStack_logo">
+                                        <img src="./images/mySQL.png" alt="mySQL"class="mainStack_logo">
+                                        <img src="./images/mongoDB.png" alt="mongoDB"class="mainStack_logo">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project" data-type="back-end">
+                            <a href="#project__shower" data-projectid="2">
+                                <img src="./images/projects/HamsterMarket.png" alt="project2" class="project__img">
+                                <div class="project__metadata">
+                                    <h3 class="project__title">Hamster_Market</h3>
+                                    <p class="project__detail">인원 : 3명, 소요시간: 3주</p>
+                                    <p class="project__detail">NaverMap, TypeScript, React, Express, OAuth를 활용한 쇼핑몰 서비스 </p>
+                                    <div class="mainStack_logos">
+                                        <img src="./images/react.png" alt="react" class="mainStack_logo">
+                                        <img src="./images/tailwindcss.png" alt="tailwindcss"class="mainStack_logo">
+                                        <img src="./images/express.png" alt="express"class="mainStack_logo">
+                                        <img src="./images/TS.png" alt="TypeScript"class="mainStack_logo">
+                                        <img src="./images/oAuth.png" alt="OAuth"class="mainStack_logo">
+                                        <img src="./images/naverMap.png" alt="naverMap"class="mainStack_logo">
+                                        <img src="./images/Axios.png" alt="axios"class="mainStack_logo">
+                                        <img src="./images/mySQL.png" alt="mySQL"class="mainStack_logo">
+                                        <img src="./images/mongoDB.png" alt="mongoDB"class="mainStack_logo">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project" data-type="back-end">
+                            <a href="#project__shower" data-projectid="1">
+                                <img src="./images/projects/chatSite.jpg" alt="project1" class="project__img">
+                                <div class="project__metadata">
+                                    <h3 class="project__title">Colosseum</h3>
+                                    <p class="project__detail">인원 : 2명, 소요시간: 2주</p>
+                                    <p class="project__detail">Express, Socket.io, JavaScript, HTML, CSS를 활용한 채팅 서비스</p>
+    
+                                    <div class="mainStack_logos">
+                                        <img src="./images/HTML.png" alt="HTML" class="mainStack_logo">
+                                        <img src="./images/cssLogo.png" alt="css"class="mainStack_logo">
+                                        <img src="./images/Js.png" alt="JavaScript"class="mainStack_logo">
+                                        <img src="./images/express.png" alt="express"class="mainStack_logo">
+                                        <img src="./images/socket.png" alt="socket.io"class="mainStack_logo">
+                                        <img src="./images/Axios.png" alt="axios"class="mainStack_logo">
+                                        <img src="./images/mySQL.png" alt="mySQL"class="mainStack_logo">
+                                        <img src="./images/mongoDB.png" alt="mongoDB"class="mainStack_logo">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <section id="project__shower" style="margin-top: 6rem;">
+                    <div class="max-container">
+                        <!-- 바꿀 타이틀 -->
+                        <h2 class="title" id="skillsTitle"></h2>
+                        <!-- 바꿀 디테일 -->
+                        <p id="skillsDetail"></p>
+                        <p class="description"></p>
+    
+                        <div class="skills">
+                            <!-- 1 -->
+                            <section class="skills__coding">  
+                                <!-- 바꿀 이미지 -->
+                                <div
+                                style="width: 100%; height: 85%; position:relative"
+                                id="skillsImg"
+                                >
+                                </div>
+        
+                                <!-- 바꿀 링크 -->
+                                <a href="#" id="skillsHref" target="_blank"><h3 class="skills__title">프로젝트 파일</h3></a>
+                                    
+                            </section>
+    
+                            <!-- 2 -->
+                            <section class="skills__tools">
+                                <!-- 바꿀 랍러 -->
+                                <ul id="skillsLibrary">
+                                </ul>
+                            </section>
+    
+                            <!-- 3 -->
+                            <section class="skills__etc">
+                                <!-- 바꿀 프레임워크 -->
+                                <ul id="skillsFrameWork">
+                                </ul>
+                            </section>
+    
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+        </section>
+
+        <!-- 요약 -->
+        <section id="summation" class="section max-container">
             <p class="description">Summation</p>
 
             <ul class="majors">
@@ -138,338 +443,12 @@
                 <li class="major">
                     <i class="fa fa-stack-overflow major__icon"></i>
                     <p class="major__title">Open API</p>
-                    <p class="major__detail">OpenAI<br/>naverMap<br/>OAuth</p>
+                    <p class="major__detail">OpenAI<br/>naver<br/>google</p>
                 </li>
 
             </ul>
 
 
-        </section>
-
-        <section id="colorBox">
-            <!-- Worked -->
-            <section id="Worked" class="section">
-                <div class="max-container">
-                    <h2 class="title">Projects</h2>
-                    <p class="description">
-                        저의 프로젝트들을 간단하게 소개합니다.</p>
-    
-                    <ul class="categories">
-                        <li><button class="category category--selected" data-category="all">ALL <span
-                                    class="category__count">3</span></button></li>
-                        <li><button class="category" data-category="front-end">Personal_Project <span
-                                    class="category__count">1</span></button></li>
-                        <li><button class="category" data-category="back-end">Team-Project <span
-                                    class="category__count">2</span></button></li>
-                    </ul>
-    
-                    <ul class="projects" id="projectClick">
-                        <li class="project" data-type="front-end">
-                            <a href="#skills" data-projectid="3">
-                                <img src="./images/projects/openAI.png" alt="project3" class="project__img">
-                                <div class="project__metadata">
-                                    <h3 class="project__title">AI_InterViewSite</h3>
-                                    <p class="project__detail">인원 : 1명, 소요시간: 2주</p>
-                                    <p class="project__detail">next, nest, OpenAI를 활용한 AI 면접 서비스</p>
-                                        
-                                    <div class="mainStack_logos">
-                                        <img src="./images/Next.png" alt="next" class="mainStack_logo">
-                                        <img src="./images/Nest.png" alt="nest"class="mainStack_logo">
-                                        <img src="./images/tailwindcss.png" alt="tailwindcss"class="mainStack_logo">
-                                        <img src="./images/TS.png" alt="TypeScript"class="mainStack_logo">
-                                        <img src="./images/AI.png" alt="openAI"class="mainStack_logo">
-                                        <img src="./images/Axios.png" alt="axios"class="mainStack_logo">
-                                        <img src="./images/mySQL.png" alt="mySQL"class="mainStack_logo">
-                                        <img src="./images/mongoDB.png" alt="mongoDB"class="mainStack_logo">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project" data-type="back-end">
-                            <a href="#skills" data-projectid="2">
-                                <img src="./images/projects/HamsterMarket.png" alt="project2" class="project__img">
-                                <div class="project__metadata">
-                                    <h3 class="project__title">Hamster_Market</h3>
-                                    <p class="project__detail">인원 : 3명, 소요시간: 3주</p>
-                                    <p class="project__detail">NaverMap, TypeScript, React, Express, OAuth를 활용한 쇼핑몰 서비스 </p>
-                                    <div class="mainStack_logos">
-                                        <img src="./images/react.png" alt="react" class="mainStack_logo">
-                                        <img src="./images/tailwindcss.png" alt="tailwindcss"class="mainStack_logo">
-                                        <img src="./images/express.png" alt="express"class="mainStack_logo">
-                                        <img src="./images/TS.png" alt="TypeScript"class="mainStack_logo">
-                                        <img src="./images/oAuth.png" alt="OAuth"class="mainStack_logo">
-                                        <img src="./images/naverMap.png" alt="naverMap"class="mainStack_logo">
-                                        <img src="./images/Axios.png" alt="axios"class="mainStack_logo">
-                                        <img src="./images/mySQL.png" alt="mySQL"class="mainStack_logo">
-                                        <img src="./images/mongoDB.png" alt="mongoDB"class="mainStack_logo">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project" data-type="back-end">
-                            <a href="#skills" data-projectid="1">
-                                <img src="./images/projects/chatSite.jpg" alt="project1" class="project__img">
-                                <div class="project__metadata">
-                                    <h3 class="project__title">Colosseum</h3>
-                                    <p class="project__detail">인원 : 2명, 소요시간: 2주</p>
-                                    <p class="project__detail">Express, Socket.io, JavaScript, HTML, CSS를 활용한 채팅 서비스</p>
-    
-                                    <div class="mainStack_logos">
-                                        <img src="./images/HTML.png" alt="HTML" class="mainStack_logo">
-                                        <img src="./images/cssLogo.png" alt="css"class="mainStack_logo">
-                                        <img src="./images/Js.png" alt="JavaScript"class="mainStack_logo">
-                                        <img src="./images/express.png" alt="express"class="mainStack_logo">
-                                        <img src="./images/socket.png" alt="socket.io"class="mainStack_logo">
-                                        <img src="./images/Axios.png" alt="axios"class="mainStack_logo">
-                                        <img src="./images/mySQL.png" alt="mySQL"class="mainStack_logo">
-                                        <img src="./images/mongoDB.png" alt="mongoDB"class="mainStack_logo">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-    
-    
-                    </ul>
-                </div>
-    
-            </section>
-    
-            <!-- Skills -->
-            <section id="skills" class="section">
-                <div class="max-container">
-                    <!-- 바꿀 타이틀 -->
-                    <h2 class="title" id="skillsTitle"></h2>
-                    <!-- 바꿀 디테일 -->
-                    <p id="skillsDetail"></p>
-                    <p class="description"></p>
-    
-                    <div class="skills">
-                        <!-- 1 -->
-                        <section class="skills__coding">  
-                            <!-- 바꿀 이미지 -->
-                            <div
-                             style="width: 100%; height: 85%; position:relative"
-                             id="skillsImg"
-                             >
-                            </div>
-    
-                            <!-- 바꿀 링크 -->
-                            <a href="#" id="skillsHref" target="_blank"><h3 class="skills__title">프로젝트 파일</h3></a>
-                            
-                        </section>
-    
-                        <!-- 2 -->
-                        <section class="skills__tools">
-                            <!-- 바꿀 랍러 -->
-                            <ul id="skillsLibrary">
-                            </ul>
-                        </section>
-    
-                        <!-- 3 -->
-                        <section class="skills__etc">
-                            <!-- 바꿀 프레임워크 -->
-                            <ul id="skillsFrameWork">
-                            </ul>
-                        </section>
-    
-                    </div>
-                </div>
-    
-    
-    
-            </section></section>
-
-
-        <!-- skills__Details -->
-        <section id="skills__Details" class="section max-container">
-            <h2 class="title">Skills</h2>
-
-            <ul class="skill__Details">
-                <li class="skill__Detail">
-                    <img src="./images/HTML.png" alt="HTML" class="skill__Detail__img">
-                    <div class="skill__Detail__bubble">
-                        <div class="bar__metadata">
-                            <span>HTML</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 50%"></div>
-                        </div>
-                        <div class="font_new_black">웹 페이지의 구조와 콘텐츠 마크업에 능숙합니다.
-                            <br/>시맨틱 태그와 기본적인 접근성 원칙을 이해하고 있으며, 효율적인 레이아웃을 구현하기 위해 적절한 HTML 요소들을 사용합니다.
-                            <br/>간단한 웹사이트와 정적 페이지를 구축하는 데 필요한 HTML 지식을 갖추고 있으며, 스타일링과 스크립팅 작업을 지원하기 위한 탄탄한 기초를 보유하고 있습니다.</div>
-                    </div>
-                </li>
-                <li class="skill__Detail">
-                    
-
-                    <div class="skill__Detail__img">
-                        <img src="./images/cssLogo.png" alt="CSS" style="height: 140px; width: 140px; padding-top: 25px;">
-                    </div>
-
-
-                    <div class="skill__Detail__bubble">
-                        <div class="bar__metadata">
-                            <span>CSS</span>
-                            <span>65%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 65%"></div>
-                        </div>
-                        <div class="font_new_black">기본적인 스타일링부터 애니메이션과 트랜지션을 통한 인터랙션까지 구현할 수 있습니다.
-                            <br/>웹 페이지의 레이아웃과 디자인을 세부적으로 조정하고, Flex와 Grid를 사용해 반응형 디자인을 구성합니다.
-                            <br/>또한, 트랜지션과 애니메이션을 사용해 사용자에 생동감을 부여할 수 있습니다.</div>
-                    </div>
-                </li>
-
-                <li class="skill__Detail">
-                    <div class="skill__Detail__img" style="position: relative;">
-                        <img src="./images/Js.png" alt="JavaScript" style="height: 130px; width: 240px; padding-top: 25px; position:absolute; left: -44px;">
-                    </div>
-                    
-                    <div class="skill__Detail__bubble">
-                        <div class="bar__metadata">
-                            <span>JavaScript</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 70%"></div>
-                        </div>
-                        <div class="font_new_black">동적인 웹 기능을 구현하는 데 능숙합니다.
-                            <br/>DOM 조작, 이벤트 처리, 비동기 작업(콜백, 프로미스, async/await) 등을 통해 사용자의 인터랙션에 실시간으로 반응하는 웹 애플리케이션을 개발할 수 있습니다.
-                            <br/>또한, API 호출을 통해 서버와 데이터를 주고받고, 데이터를 처리하는 작업에 익숙하며, ES6+ 문법을 활용하여 효율적인 코드 작성을 할 수 있습니다.
-                            <br/>간단한 애니메이션 구현과 성능 최적화에도 기본적인 이해를 갖추고 있습니다.</div>
-                    </div>
-                </li>
-
-                <li class="skill__Detail">
-
-                    <div class="skill__Detail__img">
-                        <img src="./images/TS.png" alt="TypeScript" style="height: 130px; width: 140px; padding-top: 20px;">
-                    </div>
-
-                   
-                    <div class="skill__Detail__bubble">
-                        <div class="bar__metadata">
-                            <span>TypeScript</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 60%"></div>
-                        </div>
-                        <div class="font_new_black">기본적인 타입 선언과 함께 declare를 사용하여 외부 라이브러리와 전역 변수의 타입을 정의하여 사용한 경험이 있습니다.
-                            <br/>인터페이스와 제네릭을 통해 코드의 안전성과 가독성을 높이며, 타입 체크와 타입 추론을 활용하여 오류를 조기에 발견하고 안정적인 코드를 작성할 수 있습니다.
-                            <br/>TypeScript의 핵심 기능을 활용하여 중소규모의 프로젝트에서 효율적으로 작업할 수 있는 경험을 보유하고 있습니다.</div>
-                    </div>
-                </li>
-
-                <li class="skill__Detail">
-                    <div class="skill__Detail__img" style="position: relative;">
-                        <img src="./images/git.png" alt="Git" style="height: 130px; width: 280px; padding-top: 25px; position:absolute; left: -60px;">
-                    </div>
-
-                    <div class="skill__Detail__bubble">
-                        <div class="bar__metadata">
-                            <span>Git</span>
-                            <span>45%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 45%"></div>
-                        </div>
-                        <div class="font_new_black">기본적인 버전 관리와 협업 기능을 이해하고 있습니다.
-                            <br/>코드 변경 사항을 커밋하고, 브랜치를 생성 및 병합하며, Pull Request를 통해 코드 리뷰와 협업을 진행할 수 있습니다.
-                            <br/>또한, GitHub Actions를 사용하여 CI/CD 파이프라인을 자동화하고, 프로젝트의 빌드, 테스트, 배포 과정을 효율적으로 관리할 수 있는 경험을 보유하고 있습니다.</div>
-                    </div>
-                </li>
-
-                <li class="skill__Detail">
-                    <img src="./images/AWS.png" alt="AWS" class="skill__Detail__img">
-                    <div class="skill__Detail__bubble">
-                        <div class="bar__metadata">
-                            <span>AWS</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 40%"></div>
-                        </div>
-                        <div class="font_new_black">클라우드 서비스와 인프라 관리를 경험했습니다.
-                            <br/>AWS를 통해 프로젝트 배포, HTTPS 인증 설정, 도메인 사용을 경험해본 적이 있으며, EC2 인스턴스를 설정하고 관리할 수 있는 기본적인 경험도 보유하고 있습니다.
-                            <br/>AWS의 주요 서비스와 도구들을 활용하여 클라우드 기반 프로젝트를 효과적으로 지원할 수 있습니다.</div>
-                    </div>
-                </li>
-
-                <li class="skill__Detail">
-                    <div class="skill__Detail__img">
-                        <img src="./images/DB.png" alt="DataBases" style="height: 140px; width: 130px; padding-top: 15px;">
-                    </div>
-                    <div class="skill__Detail__bubble">
-                        <div class="bar__metadata">
-                            <span>DataBases</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 50%"></div>
-                        </div>
-                        <div class="font_new_black">저는 MySQL과 MongoDB를 통합하여 약 50% 정도 활용할 수 있습니다.
-                            <br/>MySQL에서는 데이터베이스 설계, 쿼리 작성, 인덱스, 조인, 서브쿼리 등을 통해 관계형 데이터 관리를 능숙하게 수행할 수 있으며, 데이터베이스의 성능을 최적화할 수 있습니다.
-                            <br/>MongoDB에서는 비관계형 데이터 모델을 활용하여 유연한 데이터 저장 및 검색이 가능하며, NoSQL 데이터베이스의 기본적인 CRUD 작업과 집계 파이프라인을 활용한 경험이 있습니다.
-                            <br/>두 데이터베이스 시스템을 통합하여 복잡한 데이터 처리 요구사항에 맞는 솔루션을 설계하고 구현할 수 있습니다.</div>
-                    </div>
-                </li>
-
-                <li class="skill__Detail">
-                    <img src="./images/Next.png" alt="Next.js" class="skill__Detail__img">
-                    <div class="skill__Detail__bubble">
-                        <div class="bar__metadata">
-                            <span>Next.js</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 40%"></div>
-                        </div>
-                        <div class="font_new_black">React 기반의 서버 사이드 렌더링 및 정적 사이트 생성을 통해 효율적인 웹 애플리케이션을 개발할 수 있습니다.
-                            <br/>페이지 기반 라우팅, 서버 사이드 렌더링(SSR), 정적 사이트 생성(SSG) 등을 이해하고, 데이터 패칭과 API 라우트를 설정하여 백엔드와의 통합을 원활하게 할 수 있습니다.
-                            <br/>또한, Next.js의 다양한 기능과 설정을 활용하여 성능 최적화와 사용자 경험을 향상시키는 작업을 수행할 수 있습니다.</div>
-                    </div>
-                </li>
-
-                <li class="skill__Detail">
-                    <div class="skill__Detail__img">
-                        <img src="./images/Nest.png" alt="Nest.js" style="height: 150px; width: 150px; object-fit: contain;">
-                    </div>
-                    
-                    <div class="skill__Detail__bubble">
-                        <div class="bar__metadata">
-                            <span>Nest.js</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 40%"></div>
-                        </div>
-                        <div class="font_new_black">TypeScript 기반의 서버 사이드 애플리케이션 개발에 능숙합니다.
-                            <br/>NestJS의 모듈 시스템, 의존성 주입, 데코레이터 등을 활용하여 구조화된 코드베이스를 구축하고, 안정적인 RESTful API를 설계할 수 있습니다. 
-                            <br/>또한, NestJS의 다양한 내장 기능과 미들웨어를 이용하여 인증, 데이터 유효성 검사, 예외 처리 등을 효과적으로 구현할 수 있습니다.
-                            <br/>NestJS를 사용하여 확장 가능하고 유지 보수가 용이한 서버 애플리케이션을 개발할 수 있습니다.</div>
-                    </div>
-                </li>
-
-                <li class="skill__Detail">
-                    <img src="./images/RnD.png" alt="RnD" class="skill__Detail__img">
-                    <div class="skill__Detail__bubble">
-                        <div class="bar__metadata">
-                            <span>R&D</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="bar__bg">
-                            <div class="bar__value" style="width: 75%"></div>
-                        </div>
-                        <div class="font_new_black">혁신적인 기술과 솔루션을 개발하는 데 능숙합니다.
-                            <br/>새로운 기술을 연구하고, 실험적인 프로젝트를 진행하며, 기존 시스템의 문제를 해결하기 위해 창의적인 접근 방식을 적용할 수 있습니다.
-                            <br/>Map,OAuth,OpenAI와 같은 기술 트렌드를 분석하고, 새로운 아이디어를 실험하여 프로토타입을 구축하며, 이 과정을 통해 기술적 도전 과제를 해결하고 혁신을 주도하는 경험이 있습니다.</div>
-                    </div>
-                </li>
-
-            </ul>
         </section>
 
         <!-- Arrow up -->

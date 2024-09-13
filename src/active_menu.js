@@ -2,9 +2,8 @@
 
 const sectionIDs = [
   "#home",
-  "#about",
+  "#summation",
   "#Worked",
-  "#skills",
   "#skills__Details",
   "#Contact",
 ];

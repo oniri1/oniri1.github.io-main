@@ -371,16 +371,10 @@ button:focus {
     var(--color-primary),
     var(--color-primary-variant)
   );
-}
-
-/* Skills */
-#skills {
   position: relative;
-  /* background-color:  */
-  color: var(--color-text);
 }
 
-#skills::after {
+#colorBox::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -395,8 +389,9 @@ button:focus {
   -webkit-mask: var(--divider-multi-wave);
 }
 
-.skills__wave .shape-fill {
-  fill: var(--color-primary);
+#project__shower {
+  position: relative;
+  color: var(--color-text);
 }
 
 .skills {
