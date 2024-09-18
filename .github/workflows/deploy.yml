@@ -3,8 +3,7 @@ name: Deploy Project
 on:
   push:
     branches:
-      - develop
-      # - main
+      - main
 jobs:
   reset_dir:
     runs-on: ubuntu-latest
