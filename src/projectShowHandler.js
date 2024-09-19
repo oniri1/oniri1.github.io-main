@@ -19,7 +19,7 @@ const shopSiteValues = {
     "프론트엔드와 글쓰기 페이지와 유저 페이지를 중점으로 구현하고 NaverMap,OAuth를 R&D 하여 프로젝트에 적용 시켰습니다.",
   skillsImg: `<a href="https://main.oniri1.com/twoProject/front" target="_blank"><img src="./images/projects/HamsterMarket.png" style="width: 100%; height: 100%;" alt="project2"></a>`,
   skillsLibrary: `<li>react-query</li><li>react-router-dom</li><li>recoil</li><li>Observer</li>`,
-  skillsLibraryJob: `<li>유저 페이지 구현</li><li>게시글 쓰기 페이지 구현</li><li>전체적인 데이터 처리</li><li>React Warning 수정</li>`,
+  skillsLibraryJob: `<li>유저 페이지 구현</li><li>게시글 쓰기 페이지 구현</li><li>전체적인 데이터 처리</li><li>React Warning 수정</li><li>NaverMap 구현</li>`,
   skillsFrameWork: `<img src="./images/express.png" alt="express"class="mainStack_logo">`,
   skillsFrameWorkJob: `<li>OAuth 코드 구현</li>`,
   skillsHref:
