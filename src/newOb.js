@@ -1,7 +1,5 @@
 let chargeBarElems = [...document.getElementsByClassName("bar__value")];
 
-console.log(chargeBarElems);
-
 const chargeObCallBack = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {

@@ -1,5 +1,3 @@
-/* Global */
-
 :root {
   --color-primary: var(--color-black);
   --color-primary-variant: var(--color-gray);
@@ -78,7 +76,6 @@ button:focus {
   transform: translateX(-100%);
 }
 
-/* Common */
 .section {
   padding: 4rem;
   text-align: center;
@@ -99,7 +96,6 @@ button:focus {
   margin: 0.5rem 0;
 }
 
-/* mobile */
 .Mobile_menu_toggle {
   position: absolute;
   display: none;
@@ -109,7 +105,6 @@ button:focus {
   color: #6500a0;
 }
 
-/* Header */
 .header {
   background-color: transparent;
   position: fixed;
@@ -179,8 +174,6 @@ button:focus {
 
   justify-content: center;
 }
-
-/* 웨이브 */
 
 #home::after {
   content: "";
@@ -313,7 +306,6 @@ button:focus {
   cursor: pointer;
 }
 
-/* About */
 .majors {
   display: flex;
   justify-content: space-between;
@@ -413,7 +405,6 @@ button:focus {
 
   top: 1px;
   padding-bottom: 0.2rem;
-  /* border-bottom: 1px solid white; */
 }
 
 .skills__coding {
@@ -435,7 +426,7 @@ button:focus {
 .bar {
   display: flex;
   flex-direction: column;
-  /* 수직정렬로 만들어서 flex여도 다음거가 아래로 위치 */
+
   padding: 1rem;
   gap: 0.5rem;
 }
@@ -443,7 +434,6 @@ button:focus {
 .bar__metadata {
   display: flex;
   justify-content: space-between;
-  /* 사이 간격 자동 부여 */
 }
 
 .bar__bg {
@@ -459,9 +449,7 @@ button:focus {
   transition: all 1500ms ease;
 }
 
-/* Worked */
 #Worked {
-  /* background-color: var(--color-primary); */
   color: var(--color-text);
 }
 
@@ -580,21 +568,17 @@ button:focus {
   background-color: var(--color-accent);
 }
 
-/* skill__Detail */
-
 .skill__Details {
-  margin: 3rem;
+  margin: 0;
 }
 
 .skill__Detail {
+  min-width: 100%;
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 0.8rem;
   align-items: center;
   margin-bottom: 3rem; //백
-}
-
-.skill__Detail:nth-child(even) .skill__Detail__img {
-  order: 1;
 }
 
 .skill__Detail__img {
@@ -622,8 +606,6 @@ button:focus {
   filter: brightness(70%);
 }
 
-/* arrow up */
-
 .arrow-up {
   background-color: var(--color-primary);
   position: fixed;
@@ -644,8 +626,6 @@ button:focus {
 .arrow_stop {
   pointer-events: none;
 }
-
-/* footer */
 
 #Contact {
   position: relative;
@@ -827,7 +807,6 @@ button:focus {
     bottom: -50px;
   }
 
-  /* mobile */
   .Mobile_menu_toggle {
     display: block;
   }
@@ -888,7 +867,6 @@ button:focus {
   }
 
   .majors {
-    /* flex-direction: column; */
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -951,18 +929,9 @@ button:focus {
     display: none;
   }
 
-  .skill__Details {
-    margin: 0;
-  }
-
-  .skill__Detail {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .skill__Detail:nth-child(even) .skill__Detail__img {
+  /* .skill__Detail:nth-child(even) .skill__Detail__img {
     order: 0;
-  }
+  } */
 
   .arrow-up {
     font-size: 2rem;
