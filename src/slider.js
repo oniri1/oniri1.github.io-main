@@ -35,7 +35,7 @@ prevButton.onclick = () => {
   }
 };
 
-nextButton.onclick = () => {
+const nextClick = () => {
   currentIndex++;
   showSlide(currentIndex);
 
@@ -47,6 +47,10 @@ nextButton.onclick = () => {
       slides.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
     }, 500); // 0.5초 후에 바로 이동
   }
+};
+
+nextButton.onclick = () => {
+  nextClick();
 };
 
 window.onresize = () => {

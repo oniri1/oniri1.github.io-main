@@ -27,3 +27,13 @@
 #next {
   right: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  #prev {
+    left: 0px;
+  }
+
+  #next {
+    right: 0px;
+  }
+}
