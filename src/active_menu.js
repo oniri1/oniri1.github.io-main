@@ -1,8 +1,8 @@
 const sectionIDs = [
   "#home",
-  "#summation",
-  "#Worked",
   "#skills__Details",
+  "#Worked",
+  "#summation",
   "#Contact",
 ];
 const sections = sectionIDs.map((id) => document.querySelector(id));
@@ -31,7 +31,7 @@ function observercallback(entries) {
     selectLastone =
       index === sectionIDs.length - 1 &&
       entry.isIntersecting &&
-      entry.intersectionRatio >= 0.93;
+      entry.intersectionRatio >= 0.98;
   });
 
   const navIndex = selectLastone
