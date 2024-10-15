@@ -1,0 +1,155 @@
+@media screen and (max-width: 1080px) {
+  .home__title--strong--font {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  .home__title--strong--font {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .home__title--strong--font {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .home__title--strong--font {
+    font-size: 0.75rem;
+  }
+
+  #phoneValue:hover {
+    color: var(--color-accent);
+  }
+  #phoneValue {
+    pointer-events: all;
+  }
+
+  .Mobile_menu_toggle {
+    display: block;
+  }
+
+  .header__menu.open {
+    display: flex;
+  }
+
+  .header__menu__item {
+    display: block;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--color-primary);
+  }
+
+  .header__menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 4rem;
+    gap: 1rem;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+
+  #home {
+    padding-bottom: 3rem;
+  }
+
+  .home__box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__title {
+    margin-bottom: 0.5rem;
+  }
+
+  .arrow-up {
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cmd-window {
+    width: 80%;
+  }
+
+  .home__title--strong--font {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0.4rem;
+  }
+
+  .Mobile_menu_toggle {
+    top: 0.9rem;
+  }
+
+  .home__title--strong--font {
+    font-size: 0.65rem;
+  }
+
+  .cmd-window {
+    height: 230px;
+  }
+
+  .cmd-header {
+    height: 16px;
+  }
+
+  .cmd-header-title {
+    font-size: 8px;
+    font-weight: 300;
+  }
+
+  .cmd-header-buttons {
+    top: 2.5px;
+    left: 2.5px;
+    gap: 2.5px;
+  }
+
+  .cmd-header-button {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cmd-window {
+    width: 80%;
+    height: 250px;
+  }
+
+  .home__title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .cmd-window {
+    width: 90%;
+    height: 250px;
+  }
+}

@@ -1,0 +1,59 @@
+/* 헤더 */
+.header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  white-space: nowrap;
+  transition: all 300ms ease;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__logo__img {
+  object-fit: cover;
+  width: 36px;
+  height: 36px;
+}
+
+.header__logo__title {
+  font-size: 1.8rem;
+}
+
+.header__menu {
+  display: flex;
+  gap: 4px;
+}
+
+.header__menu__item {
+  display: block;
+  padding: 8px 16px;
+  border-bottom: 1px solid transparent;
+}
+
+.header__menu__item:hover {
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.header__menu__item.active {
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+}
+
+.Mobile_menu_toggle {
+  position: absolute;
+  display: none;
+  font-size: 1.5rem;
+  top: 1.3rem;
+  right: 1rem;
+  color: #6500a0;
+}

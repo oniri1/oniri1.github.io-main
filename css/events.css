@@ -1,0 +1,4 @@
+/* 이벤트용 클래스 */
+.header--dark {
+  background-color: var(--color-primary-variant);
+}

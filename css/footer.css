@@ -1,0 +1,64 @@
+/* 푸터 */
+
+#Contact {
+  position: relative;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.footer__arrow_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  overflow: hidden;
+  line-height: 0;
+}
+
+.footer__arrow_top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.footer__arrow_top .shape-fill {
+  fill: white;
+}
+
+#emailValue:hover {
+  color: var(--color-accent);
+}
+
+#phoneValue {
+  pointer-events: none;
+}
+
+/* 컨텍 */
+.contact__links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.contact__link {
+  transition: color 250ms ease-in;
+}
+
+.contact__link:hover {
+  color: var(--color-accent);
+}
+
+.contact__svg {
+  height: 36px;
+  width: 31px;
+  fill: white;
+  transition: fill 250ms ease-in;
+}
+
+.contact__svg:hover {
+  fill: var(--color-accent);
+}

@@ -1,0 +1,5 @@
+/* 최대 크기 지정 */
+.max-container {
+  max-width: var(--size-max-width);
+  margin: auto;
+}
