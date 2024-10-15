@@ -45,3 +45,7 @@ button {
 button:focus {
   outline: 1px solid transparent;
 }
+
+section {
+  scroll-margin-top: 74px;
+}

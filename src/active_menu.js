@@ -3,9 +3,10 @@ const sectionIDs = [
   "#two_Section",
   "#three_Section",
   "#four_Section",
-  "#five_Section",
+  "#Contact",
 ];
 const sections = sectionIDs.map((id) => document.querySelector(id));
+
 const navItems = sectionIDs.map((id) =>
   document.querySelector(`[href="${id}"]`)
 );
