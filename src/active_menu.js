@@ -29,22 +29,11 @@ function observercallback(entries) {
 
     visibleSections[index] = entry.isIntersecting;
 
-    console.log("index", index);
-
     selectLastone =
       index === sectionIDs.length - 1 &&
       entry.isIntersecting &&
       entry.intersectionRatio >= 0.98;
-    console.log(
-      sectionIDs,
-      sectionIDs.length,
-      entry.isIntersecting,
-      entry.intersectionRatio
-    );
   });
-
-  console.log("셀렉트라스트", selectLastone);
-  console.log(visibleSections);
 
   let navIndex = 0;
 
@@ -59,8 +48,6 @@ function observercallback(entries) {
   }
 
   checkReallyLastIntersecting(visibleSections);
-  console.log(navIndex);
-
   selectNavItem(navIndex);
 }
 
@@ -70,7 +57,6 @@ function findFirstIntersecting(intersections) {
 }
 
 function checkReallyLastIntersecting(intersections) {
-  console.log(intersections);
   const indexs = intersections.filter((data) => {
     return data === true;
   });

@@ -195,7 +195,7 @@ button:focus {
   border-radius: 4px;
 }
 
-#home {
+#one_Section {
   position: relative;
   background-color: var(--color-primary);
   background-image: var(--home-bg-svg);
