@@ -75,6 +75,11 @@
   height: 30px;
 }
 
+.project_git_link:hover {
+  transition: all 250ms ease-in;
+  scale: 1.5;
+}
+
 @media (max-width: 768px) {
   .two_s_container {
     flex-direction: column;
