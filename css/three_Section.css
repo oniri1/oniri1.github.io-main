@@ -1,12 +1,13 @@
 #three_Section {
   padding: 20px;
-  border: 3px solid green;
+  margin-top: 20px;
+  margin-bottom: 60px;
   color: var(--color-primary);
 }
 
 #three_Section h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
@@ -20,9 +21,9 @@
 }
 
 .skill_box {
-  width: 90%;
-  padding: 1.5rem;
-  border: 2px solid #ccc;
+  width: 70%;
+  /* padding: 1.5rem; */
+  /* border: 2px solid #ccc; */
   border-radius: 8px;
 }
 .skill_tag {
@@ -50,10 +51,30 @@
   object-fit: cover;
   border-radius: 8px;
   background-color: #f0f0f0;
+  padding: 3px;
 }
 
 .skill_value {
-  font-size: 1.2rem;
+  padding-top: 16px;
+}
+
+@media (max-width: 870px) {
+  #three_Section h2 {
+    font-size: 2rem;
+  }
+
+  .skill_box {
+    padding: 1rem;
+  }
+
+  .skill_content img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skill_value {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -67,6 +88,12 @@
 
   .skill_box {
     padding: 1rem;
+  }
+
+  .skill_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .skill_content img {
