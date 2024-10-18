@@ -183,10 +183,12 @@
                   <img src="./images/svgs/mongodb.svg" alt="mongodb" />
                 </li>
                 <li>제작 시간 : 24.08.20 ~ 24.09.06 (2주)</li>
-                <li>OpenAI API Chat 모델을 활용한 AI 서비스 사이트</li>
-                <li>
-                  <div>맡은 작업</div>
-                  <div>느낀 점</div>
+                <li class="shadows">
+                  OpenAI API Chat 모델을 활용한 AI 서비스 사이트
+                </li>
+                <li class="project_active_box">
+                  <div class="forWork">맡은 작업</div>
+                  <div class="forModal">느낀 점</div>
                 </li>
 
                 <li>
@@ -232,12 +234,14 @@
                   />
                 </li>
                 <li>제작 시간 : 24.07.05 ~ 24.07.30 (3주)</li>
-                <li>
+                <li class="shadows">
                   NaverMap, OAuth2.0 등의 활용 및 TypeScript, React,
                   TailwindCss로 제작한 쇼핑몰 서비스
                 </li>
-                <li>맡은 작업</li>
-                <li>느낀 점</li>
+                <li class="project_active_box">
+                  <div class="forWork">맡은 작업</div>
+                  <div class="forModal">느낀 점</div>
+                </li>
                 <li>
                   <a
                     href="https://main.oniri1.com/twoProject/front"
@@ -283,12 +287,14 @@
                   <img src="./images/svgs/mongodb.svg" alt="mongodb" />
                 </li>
                 <li>제작 시간 : 24.05.22 ~ 24.06.03 (1주)</li>
-                <li>
+                <li class="shadows">
                   HTML5,CSS3,Javascript로 프론트 제작 및 Express,Socket.Io로
                   실시간 통신을 구현한 채팅 사이트
                 </li>
-                <li>맡은 작업</li>
-                <li>느낀 점</li>
+                <li class="project_active_box">
+                  <div class="forWork">맡은 작업</div>
+                  <div class="forModal">느낀 점</div>
+                </li>
                 <li>
                   <a href="https://main.oniri1.com/chatSite/" target="_blank"
                     >배포 사이트</a
@@ -310,15 +316,11 @@
         </div>
       </section>
 
-      <!-- 모달용 버튼 -->
-      <button class="modal-trigger">Open Modal</button>
-
-      <!-- 모달 -->
       <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <h2>프로젝트 상세 내용</h2>
-          <p>내용</p>
+          <h2 id="modal_title"></h2>
+          <p id="modal_content"></p>
         </div>
       </div>
 
