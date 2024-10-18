@@ -1,0 +1,37 @@
+/* 텍스트 관련 */
+.text-center {
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+
+  color: #ffffff;
+  text-align: center;
+
+  padding-bottom: 8px;
+}
+
+.font_07_black {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: start;
+  margin-top: 0.4rem;
+  margin-left: 0.8rem;
+  word-break: keep-all;
+}
+
+.font_07_white {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(254, 254, 254, 0.7);
+}
+
+.description {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}

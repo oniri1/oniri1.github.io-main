@@ -1,0 +1,54 @@
+#four_Section {
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+#four_Section h2 {
+  font-size: 2.5rem;
+  /* margin-bottom: 2rem; */
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.resume_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.list {
+  padding: 28px 0;
+  width: 70%;
+  border-bottom: 1px solid rgb(233, 233, 236);
+}
+.list:last-child {
+  border-bottom: none;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  word-break: keep-all;
+  color: #292e41;
+}
+.state,
+.date {
+  margin-left: 8px;
+  color: #67738e;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.state {
+  font-size: 13px;
+}
+
+.desc {
+  margin-top: 8px;
+  width: 100%;
+  color: var(--gray120);
+  font-size: 16px;
+  line-height: 24px;
+  word-break: break-all;
+}

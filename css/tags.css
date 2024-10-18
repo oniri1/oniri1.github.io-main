@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none; /* 스크롤바 숨기기 */
+}
+body {
+  margin: 0;
+  -ms-overflow-style: none;
+}
+
+p,
+h2,
+strong,
+li {
+  max-width: 100%;
+  word-break: keep-all;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+button {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+}
+
+button:focus {
+  outline: 1px solid transparent;
+}
+
+section {
+  scroll-margin-top: 74px;
+}

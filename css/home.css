@@ -1,0 +1,52 @@
+/* 홈 */
+
+.home__box {
+  margin-bottom: 1rem;
+}
+
+.home__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.home__avatar {
+  position: relative;
+  width: 230px;
+  height: 300px;
+  object-fit: cover;
+  transform: scaleX(-1);
+  border-radius: 100%;
+}
+
+.home__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home__title--strong--font {
+  font-size: 1rem;
+}
+
+.home__title--strong {
+  color: var(--color-accent);
+}
+
+.home__contact {
+  background-color: var(--color-accent);
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  display: inline-block;
+  color: var(--color-black);
+  border-radius: 4px;
+}
+
+.home__contact:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
+}

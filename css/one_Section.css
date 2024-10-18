@@ -1,0 +1,32 @@
+/* 첫 세션 */
+
+#one_Section {
+  position: relative;
+  background-color: var(--color-primary);
+  background-image: var(--home-bg-svg);
+  color: var(--color-text);
+  padding: 5rem 1rem;
+  padding-top: 7rem;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  justify-content: center;
+}
+
+#one_Section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% + 1.3px);
+  height: 90px;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background-color: var(--color-white);
+  mask: var(--divider-single-wave);
+  -webkit-mask: var(--divider-single-wave);
+}
