@@ -77,6 +77,9 @@
     padding: 1rem;
   }
 
+  .skill_content {
+    padding-top: 16px;
+  }
   .skill_content img {
     width: 80px;
     height: 80px;
@@ -84,6 +87,7 @@
 
   .skill_value {
     font-size: 0.8rem;
+    padding-top: 0;
   }
 }
 
