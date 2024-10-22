@@ -28,7 +28,7 @@
 }
 .skill_tag {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 28px;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   border-radius: 4px;
@@ -42,12 +42,15 @@
 
 .skill_content {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
+  padding: 0 16px;
+  min-height: 120px;
+  /* align-items: center; */
 }
 
 .skill_content img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 8px;
   background-color: #f0f0f0;
@@ -56,6 +59,13 @@
 
 .skill_value {
   padding-top: 16px;
+  align-content: start;
+}
+
+.skill_value li {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
 }
 
 @media (max-width: 870px) {
